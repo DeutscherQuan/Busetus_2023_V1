@@ -1,0 +1,2579 @@
+[
+    {
+        "id": "8c5b202179f3c92c",
+        "type": "tab",
+        "label": "Trang_chủ_dev",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6241173ef1309ea6",
+        "type": "group",
+        "z": "8c5b202179f3c92c",
+        "name": "",
+        "style": {
+            "fill": "#ffefbf",
+            "label": true
+        },
+        "nodes": [
+            "b66f7c536d1f5847",
+            "8d5a72ea8e708723",
+            "e4e85870c7866157"
+        ],
+        "x": 874,
+        "y": 359,
+        "w": 402,
+        "h": 122
+    },
+    {
+        "id": "faee3982a2309356",
+        "type": "group",
+        "z": "8c5b202179f3c92c",
+        "name": "",
+        "style": {
+            "label": false,
+            "fill": "#ffbfbf"
+        },
+        "nodes": [
+            "4e4cc9a1097f8358",
+            "08b043cbca6d85e2",
+            "27aeeeec558afec8",
+            "a4465b90fceebd12",
+            "cd4e2905c5bab211",
+            "cc9f6abd1c7196f4",
+            "ad3fc7895150ee58",
+            "096a49855850e03b",
+            "1baae505289cd069",
+            "efdfca947fc987fa",
+            "332af1a921e21ff1",
+            "31125857093a9a5c",
+            "c9e5b9c34d028b7f"
+        ],
+        "x": 874,
+        "y": 19,
+        "w": 392,
+        "h": 322
+    },
+    {
+        "id": "71314fcaeb861aba",
+        "type": "group",
+        "z": "8c5b202179f3c92c",
+        "name": "",
+        "style": {
+            "fill": "#e3f3d3",
+            "label": true
+        },
+        "nodes": [
+            "6c4c2d8fd6844d39",
+            "916620440f5b73d1",
+            "d8cae85b9f534f76"
+        ],
+        "x": 874,
+        "y": 499,
+        "w": 402,
+        "h": 122
+    },
+    {
+        "id": "247dc461b88b1efb",
+        "type": "group",
+        "z": "8c5b202179f3c92c",
+        "name": "",
+        "style": {
+            "fill": "#ffefbf",
+            "label": true
+        },
+        "nodes": [
+            "a4ce0da16b01300c",
+            "ea598806ac9e6c22",
+            "a4adf5994a34ceb8"
+        ],
+        "x": 874,
+        "y": 639,
+        "w": 402,
+        "h": 122
+    },
+    {
+        "id": "b53fedbc6101484c",
+        "type": "group",
+        "z": "8c5b202179f3c92c",
+        "name": "",
+        "style": {
+            "fill": "#ffefbf",
+            "label": true
+        },
+        "nodes": [
+            "ae7d5baf3a5b7e65",
+            "2bcff73208317941",
+            "b225d9c323233006"
+        ],
+        "x": 874,
+        "y": 779,
+        "w": 402,
+        "h": 122
+    },
+    {
+        "id": "bf1105ce4b673806",
+        "type": "function",
+        "z": "8c5b202179f3c92c",
+        "name": "function 1",
+        "func": "const { payload } = msg;\nconst keys = Object.keys(payload);\nreturn{\n    payload: payload[keys[0]],\n};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 100,
+        "wires": [
+            [
+                "45ae4e9afd6f25c4"
+            ]
+        ]
+    },
+    {
+        "id": "45ae4e9afd6f25c4",
+        "type": "ui_template",
+        "z": "8c5b202179f3c92c",
+        "group": "b25701a9d70f9a45",
+        "name": "Ảnh bóng rổ",
+        "order": 1,
+        "width": 7,
+        "height": 4,
+        "format": "<img src=\"{{msg.payload}}\"></img>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 510,
+        "y": 100,
+        "wires": [
+            [
+                "d5c0372cea3ba683"
+            ]
+        ]
+    },
+    {
+        "id": "d5c0372cea3ba683",
+        "type": "debug",
+        "z": "8c5b202179f3c92c",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "cf25b90db6b22508",
+        "type": "firebase.on",
+        "z": "8c5b202179f3c92c",
+        "name": "",
+        "firebaseconfig": "",
+        "childpath": "/Image URL Storage",
+        "atStart": true,
+        "eventType": "value",
+        "queries": [],
+        "x": 320,
+        "y": 40,
+        "wires": [
+            [
+                "bf1105ce4b673806",
+                "373e5de2f111debc",
+                "234e7b78174c14ab",
+                "89c2cbe3c6516871",
+                "41e7bbc13484c0c7"
+            ]
+        ]
+    },
+    {
+        "id": "373e5de2f111debc",
+        "type": "function",
+        "z": "8c5b202179f3c92c",
+        "name": "function 2",
+        "func": "const { payload } = msg;\nconst keys = Object.keys(payload);\nreturn {\n    payload: payload[keys[1]],\n};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 160,
+        "wires": [
+            [
+                "9975608795f978a7"
+            ]
+        ]
+    },
+    {
+        "id": "9975608795f978a7",
+        "type": "ui_template",
+        "z": "8c5b202179f3c92c",
+        "group": "57c0fa20410bbe40",
+        "name": "Ảnh bể bơi",
+        "order": 1,
+        "width": 7,
+        "height": 4,
+        "format": "<img src=\"{{msg.payload}}\"></img>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 510,
+        "y": 160,
+        "wires": [
+            [
+                "eb150d80a21e5b16"
+            ]
+        ]
+    },
+    {
+        "id": "eb150d80a21e5b16",
+        "type": "debug",
+        "z": "8c5b202179f3c92c",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "234e7b78174c14ab",
+        "type": "function",
+        "z": "8c5b202179f3c92c",
+        "name": "function 3",
+        "func": "const { payload } = msg;\nconst keys = Object.keys(payload);\nreturn {\n    payload: payload[keys[2]],\n};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 220,
+        "wires": [
+            [
+                "dfeb9d5eecc6f3ee"
+            ]
+        ]
+    },
+    {
+        "id": "dfeb9d5eecc6f3ee",
+        "type": "ui_template",
+        "z": "8c5b202179f3c92c",
+        "group": "17687767200cd07f",
+        "name": "Ảnh giới thiệu",
+        "order": 2,
+        "width": 22,
+        "height": 8,
+        "format": "<img src=\"{{msg.payload}}\"></img>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 520,
+        "y": 220,
+        "wires": [
+            [
+                "4b00d374690b5180"
+            ]
+        ]
+    },
+    {
+        "id": "4b00d374690b5180",
+        "type": "debug",
+        "z": "8c5b202179f3c92c",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "0cce8b5713abb65a",
+        "type": "function",
+        "z": "8c5b202179f3c92c",
+        "name": "function 4",
+        "func": "const { payload } = msg;\nconst keys = Object.keys(payload);\nreturn{\n    payload: payload[keys[(keys.length-1)]],\n};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 500,
+        "wires": [
+            [
+                "01a62297628eab28"
+            ]
+        ]
+    },
+    {
+        "id": "067088aafd6b0c62",
+        "type": "firebase.on",
+        "z": "8c5b202179f3c92c",
+        "name": "",
+        "firebaseconfig": "",
+        "childpath": "/Environment Sensor Storage/BME Storage/Humidity",
+        "atStart": true,
+        "eventType": "value",
+        "queries": [],
+        "x": 420,
+        "y": 440,
+        "wires": [
+            [
+                "0cce8b5713abb65a",
+                "222c4f05a303f1ca"
+            ]
+        ]
+    },
+    {
+        "id": "a5eb3252454fbbff",
+        "type": "function",
+        "z": "8c5b202179f3c92c",
+        "name": "function 5",
+        "func": "const { payload } = msg;\nconst keys = Object.keys(payload);\nreturn {\n    payload: payload[keys[(keys.length - 1)]],\n};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 740,
+        "wires": [
+            [
+                "62669e9214ffaf67"
+            ]
+        ]
+    },
+    {
+        "id": "427b9363072b7410",
+        "type": "function",
+        "z": "8c5b202179f3c92c",
+        "name": "function 6",
+        "func": "const { payload } = msg;\nconst keys = Object.keys(payload);\nreturn {\n    payload: payload[keys[(keys.length - 1)]],\n};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 940,
+        "wires": [
+            [
+                "f30fdad4033a44b1"
+            ]
+        ]
+    },
+    {
+        "id": "079b40624e87cce6",
+        "type": "firebase.on",
+        "z": "8c5b202179f3c92c",
+        "name": "",
+        "firebaseconfig": "",
+        "childpath": "/Environment Sensor Storage/BME Storage/Pressure",
+        "atStart": true,
+        "eventType": "value",
+        "queries": [],
+        "x": 420,
+        "y": 680,
+        "wires": [
+            [
+                "a5eb3252454fbbff",
+                "483f1026eedbe36a"
+            ]
+        ]
+    },
+    {
+        "id": "7bd6b408f4a522c1",
+        "type": "firebase.on",
+        "z": "8c5b202179f3c92c",
+        "name": "",
+        "firebaseconfig": "",
+        "childpath": "/Environment Sensor Storage/BME Storage/Temperature",
+        "atStart": true,
+        "eventType": "value",
+        "queries": [],
+        "x": 430,
+        "y": 880,
+        "wires": [
+            [
+                "427b9363072b7410",
+                "0977633c44ada912"
+            ]
+        ]
+    },
+    {
+        "id": "b66f7c536d1f5847",
+        "type": "ui_button",
+        "z": "8c5b202179f3c92c",
+        "g": "6241173ef1309ea6",
+        "name": "Chọn địa điểm khác",
+        "group": "7d7bc6b754fd872b",
+        "order": 7,
+        "width": 14,
+        "height": 1,
+        "passthru": false,
+        "label": "Chọn địa điểm khác",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\":\"WELCOME TO D'CAPITALE\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1000,
+        "y": 440,
+        "wires": [
+            [
+                "8d5a72ea8e708723"
+            ]
+        ]
+    },
+    {
+        "id": "8d5a72ea8e708723",
+        "type": "ui_ui_control",
+        "z": "8c5b202179f3c92c",
+        "g": "6241173ef1309ea6",
+        "name": "go to tab1",
+        "events": "all",
+        "x": 1190,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e4e85870c7866157",
+        "type": "comment",
+        "z": "8c5b202179f3c92c",
+        "g": "6241173ef1309ea6",
+        "name": "Buttons on tab2",
+        "info": "",
+        "x": 1080,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "4e4cc9a1097f8358",
+        "type": "ui_button",
+        "z": "8c5b202179f3c92c",
+        "g": "faee3982a2309356",
+        "name": "Đến bể bơi",
+        "group": "57c0fa20410bbe40",
+        "order": 2,
+        "width": 7,
+        "height": 1,
+        "passthru": false,
+        "label": "Đến bể bơi",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\":\"Bể bơi\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 970,
+        "y": 100,
+        "wires": [
+            [
+                "08b043cbca6d85e2"
+            ]
+        ]
+    },
+    {
+        "id": "08b043cbca6d85e2",
+        "type": "ui_ui_control",
+        "z": "8c5b202179f3c92c",
+        "g": "faee3982a2309356",
+        "name": "go to tab2",
+        "events": "all",
+        "x": 1180,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "27aeeeec558afec8",
+        "type": "ui_button",
+        "z": "8c5b202179f3c92c",
+        "g": "faee3982a2309356",
+        "name": "Đến sân bóng rổ",
+        "group": "b25701a9d70f9a45",
+        "order": 2,
+        "width": 7,
+        "height": 1,
+        "passthru": false,
+        "label": "Đến sân bóng rổ",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\":\"Sân bóng rổ\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 990,
+        "y": 140,
+        "wires": [
+            [
+                "a4465b90fceebd12"
+            ]
+        ]
+    },
+    {
+        "id": "a4465b90fceebd12",
+        "type": "ui_ui_control",
+        "z": "8c5b202179f3c92c",
+        "g": "faee3982a2309356",
+        "name": "go to tab3",
+        "events": "all",
+        "x": 1180,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cd4e2905c5bab211",
+        "type": "comment",
+        "z": "8c5b202179f3c92c",
+        "g": "faee3982a2309356",
+        "name": "Buttons on tab1",
+        "info": "",
+        "x": 1080,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "6c4c2d8fd6844d39",
+        "type": "ui_button",
+        "z": "8c5b202179f3c92c",
+        "g": "71314fcaeb861aba",
+        "name": "Chọn địa điểm khác",
+        "group": "1cd9e7408925ae69",
+        "order": 5,
+        "width": 14,
+        "height": 1,
+        "passthru": false,
+        "label": "Chọn địa điểm khác",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\":\"WELCOME TO D'CAPITALE\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1000,
+        "y": 580,
+        "wires": [
+            [
+                "916620440f5b73d1"
+            ]
+        ]
+    },
+    {
+        "id": "916620440f5b73d1",
+        "type": "ui_ui_control",
+        "z": "8c5b202179f3c92c",
+        "g": "71314fcaeb861aba",
+        "name": "go to tab1",
+        "events": "all",
+        "x": 1190,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d8cae85b9f534f76",
+        "type": "comment",
+        "z": "8c5b202179f3c92c",
+        "g": "71314fcaeb861aba",
+        "name": "Buttons on tab3",
+        "info": "",
+        "x": 1080,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "754341a7a323a8bd",
+        "type": "function",
+        "z": "8c5b202179f3c92c",
+        "name": "function 7",
+        "func": "const { payload } = msg;\nconst keys = Object.keys(payload);\nreturn {\n    payload: payload[keys[1]],\n};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1140,
+        "wires": [
+            [
+                "faf910523a025345"
+            ]
+        ]
+    },
+    {
+        "id": "faf910523a025345",
+        "type": "ui_template",
+        "z": "8c5b202179f3c92c",
+        "group": "3d1d649b5bc69b02",
+        "name": "ảnh bể bơi",
+        "order": 2,
+        "width": 20,
+        "height": 12,
+        "format": "<img src=\"{{msg.payload}}\"></img>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 510,
+        "y": 1140,
+        "wires": [
+            [
+                "3b629838f843a5bc"
+            ]
+        ]
+    },
+    {
+        "id": "3b629838f843a5bc",
+        "type": "debug",
+        "z": "8c5b202179f3c92c",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "a9866204d381ff78",
+        "type": "firebase.on",
+        "z": "8c5b202179f3c92c",
+        "name": "",
+        "firebaseconfig": "",
+        "childpath": "/Image URL Storage",
+        "atStart": true,
+        "eventType": "value",
+        "queries": [],
+        "x": 320,
+        "y": 1080,
+        "wires": [
+            [
+                "754341a7a323a8bd",
+                "7615cd57fdc41d60",
+                "a190df2203411224",
+                "3e494ba62917eef5",
+                "0b13e39fd9877f8b"
+            ]
+        ]
+    },
+    {
+        "id": "01a62297628eab28",
+        "type": "ui_text",
+        "z": "8c5b202179f3c92c",
+        "group": "cb7c8aaaccb0c240",
+        "order": 7,
+        "width": 5,
+        "height": 2,
+        "name": "",
+        "label": "Độ ẩm:",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 480,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "62669e9214ffaf67",
+        "type": "ui_text",
+        "z": "8c5b202179f3c92c",
+        "group": "cb7c8aaaccb0c240",
+        "order": 2,
+        "width": 5,
+        "height": 1,
+        "name": "",
+        "label": "Áp suất: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 480,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "f30fdad4033a44b1",
+        "type": "ui_text",
+        "z": "8c5b202179f3c92c",
+        "group": "cb7c8aaaccb0c240",
+        "order": 4,
+        "width": 5,
+        "height": 1,
+        "name": "",
+        "label": "Nhiệt độ:",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 480,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "762f42c27830be29",
+        "type": "function",
+        "z": "8c5b202179f3c92c",
+        "name": "function 12",
+        "func": "const { payload } = msg;\nconst keys = Object.keys(payload);\nreturn {\n    payload: payload[keys[(keys.length - 1)]],\n};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 1500,
+        "wires": [
+            [
+                "333c81af5591625a"
+            ]
+        ]
+    },
+    {
+        "id": "7de5e167d3c60b4c",
+        "type": "firebase.on",
+        "z": "8c5b202179f3c92c",
+        "name": "",
+        "firebaseconfig": "",
+        "childpath": "/Environment Sensor Storage/BME Storage/Appropriate",
+        "atStart": true,
+        "eventType": "value",
+        "queries": [],
+        "x": 420,
+        "y": 1440,
+        "wires": [
+            [
+                "762f42c27830be29",
+                "13e353ab1abccf8f",
+                "35972d40385cf8c5"
+            ]
+        ]
+    },
+    {
+        "id": "333c81af5591625a",
+        "type": "ui_text",
+        "z": "8c5b202179f3c92c",
+        "group": "cb7c8aaaccb0c240",
+        "order": 9,
+        "width": 5,
+        "height": 2,
+        "name": "",
+        "label": "Chiếm dụng:",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 480,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "cc9f6abd1c7196f4",
+        "type": "ui_button",
+        "z": "8c5b202179f3c92c",
+        "g": "faee3982a2309356",
+        "name": "Ý kiến khách hàng",
+        "group": "17687767200cd07f",
+        "order": 21,
+        "width": 7,
+        "height": 1,
+        "passthru": false,
+        "label": "Ý kiến khách hàng",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\":\"Ý kiến khách hàng\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 990,
+        "y": 180,
+        "wires": [
+            [
+                "ad3fc7895150ee58"
+            ]
+        ]
+    },
+    {
+        "id": "ad3fc7895150ee58",
+        "type": "ui_ui_control",
+        "z": "8c5b202179f3c92c",
+        "g": "faee3982a2309356",
+        "name": "go to tab4",
+        "events": "all",
+        "x": 1180,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "222c4f05a303f1ca",
+        "type": "function",
+        "z": "8c5b202179f3c92c",
+        "name": "function 15",
+        "func": "const { payload } = msg;\nconst keys = Object.keys(payload);\nreturn {\n    payload: payload[keys[(keys.length - 2)]],\n};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 540,
+        "wires": [
+            [
+                "f92db7686c892ceb"
+            ]
+        ]
+    },
+    {
+        "id": "f92db7686c892ceb",
+        "type": "ui_text",
+        "z": "8c5b202179f3c92c",
+        "group": "6e6a8cd2cfac115c",
+        "order": 7,
+        "width": 5,
+        "height": 2,
+        "name": "",
+        "label": "Độ ẩm:",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 490,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "483f1026eedbe36a",
+        "type": "function",
+        "z": "8c5b202179f3c92c",
+        "name": "function 16",
+        "func": "const { payload } = msg;\nconst keys = Object.keys(payload);\nreturn {\n    payload: payload[keys[(keys.length - 2)]],\n};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 800,
+        "wires": [
+            [
+                "daf14d7289f028b2"
+            ]
+        ]
+    },
+    {
+        "id": "daf14d7289f028b2",
+        "type": "ui_text",
+        "z": "8c5b202179f3c92c",
+        "group": "6e6a8cd2cfac115c",
+        "order": 4,
+        "width": 5,
+        "height": 1,
+        "name": "",
+        "label": "Áp suất: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 490,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "0977633c44ada912",
+        "type": "function",
+        "z": "8c5b202179f3c92c",
+        "name": "function 17",
+        "func": "const { payload } = msg;\nconst keys = Object.keys(payload);\nreturn {\n    payload: payload[keys[(keys.length - 2)]],\n};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 1000,
+        "wires": [
+            [
+                "9036d4ed1e35f0d7"
+            ]
+        ]
+    },
+    {
+        "id": "9036d4ed1e35f0d7",
+        "type": "ui_text",
+        "z": "8c5b202179f3c92c",
+        "group": "6e6a8cd2cfac115c",
+        "order": 2,
+        "width": 5,
+        "height": 1,
+        "name": "",
+        "label": "Nhiệt độ:",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 490,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "883a6822c43e2583",
+        "type": "ui_text",
+        "z": "8c5b202179f3c92c",
+        "group": "6e6a8cd2cfac115c",
+        "order": 9,
+        "width": 5,
+        "height": 2,
+        "name": "",
+        "label": "Chiếm dụng:",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 490,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "13e353ab1abccf8f",
+        "type": "function",
+        "z": "8c5b202179f3c92c",
+        "name": "function 18",
+        "func": "const { payload } = msg;\nconst keys = Object.keys(payload);\nreturn {\n    payload: payload[keys[(keys.length - 2)]],\n};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1560,
+        "wires": [
+            [
+                "883a6822c43e2583"
+            ]
+        ]
+    },
+    {
+        "id": "7615cd57fdc41d60",
+        "type": "function",
+        "z": "8c5b202179f3c92c",
+        "name": "function 11",
+        "func": "const { payload } = msg;\nconst keys = Object.keys(payload);\nreturn {\n    payload: payload[keys[0]],\n};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 1180,
+        "wires": [
+            [
+                "e6b90d69bec29b34"
+            ]
+        ]
+    },
+    {
+        "id": "e6b90d69bec29b34",
+        "type": "ui_template",
+        "z": "8c5b202179f3c92c",
+        "group": "1541b6da94f4272a",
+        "name": "ảnh bóng rổ",
+        "order": 2,
+        "width": 20,
+        "height": 12,
+        "format": "<img src=\"{{msg.payload}}\"></img>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 510,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "096a49855850e03b",
+        "type": "ui_button",
+        "z": "8c5b202179f3c92c",
+        "g": "faee3982a2309356",
+        "name": "Hỗ trợ khách hàng",
+        "group": "17687767200cd07f",
+        "order": 20,
+        "width": 7,
+        "height": 1,
+        "passthru": false,
+        "label": "Hỗ trợ khách hàng",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\":\"Hỗ trợ khách hàng\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 990,
+        "y": 220,
+        "wires": [
+            [
+                "1baae505289cd069"
+            ]
+        ]
+    },
+    {
+        "id": "1baae505289cd069",
+        "type": "ui_ui_control",
+        "z": "8c5b202179f3c92c",
+        "g": "faee3982a2309356",
+        "name": "go to tab5",
+        "events": "all",
+        "x": 1180,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dd8da7d84b018079",
+        "type": "ui_template",
+        "z": "8c5b202179f3c92c",
+        "group": "1a9014623af360d4",
+        "name": "Tiệc BBQ",
+        "order": 1,
+        "width": 7,
+        "height": 4,
+        "format": "<img src=\"{{msg.payload}}\"></img>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 500,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d4c193eac0c82c68",
+        "type": "ui_template",
+        "z": "8c5b202179f3c92c",
+        "group": "e7667c46d87a7393",
+        "name": "Ảnh bar",
+        "order": 1,
+        "width": 7,
+        "height": 4,
+        "format": "<img src=\"{{msg.payload}}\"></img>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 500,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "09b0583e104fec27",
+        "type": "debug",
+        "z": "8c5b202179f3c92c",
+        "name": "debug 12",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "90c4476b14f79d8d",
+        "type": "debug",
+        "z": "8c5b202179f3c92c",
+        "name": "debug 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "1c76427b7de1d1a3",
+        "type": "debug",
+        "z": "8c5b202179f3c92c",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "c30dcb9c5be69be2",
+        "type": "debug",
+        "z": "8c5b202179f3c92c",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "89c2cbe3c6516871",
+        "type": "function",
+        "z": "8c5b202179f3c92c",
+        "name": "function 22",
+        "func": "const { payload } = msg;\nconst keys = Object.keys(payload);\nreturn {\n    payload: payload[keys[3]],\n};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 280,
+        "wires": [
+            [
+                "d4c193eac0c82c68"
+            ]
+        ]
+    },
+    {
+        "id": "41e7bbc13484c0c7",
+        "type": "function",
+        "z": "8c5b202179f3c92c",
+        "name": "function 23",
+        "func": "const { payload } = msg;\nconst keys = Object.keys(payload);\nreturn {\n    payload: payload[keys[4]],\n};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 340,
+        "wires": [
+            [
+                "dd8da7d84b018079"
+            ]
+        ]
+    },
+    {
+        "id": "efdfca947fc987fa",
+        "type": "ui_button",
+        "z": "8c5b202179f3c92c",
+        "g": "faee3982a2309356",
+        "name": "Đến tiệc BBQ",
+        "group": "1a9014623af360d4",
+        "order": 2,
+        "width": 7,
+        "height": 1,
+        "passthru": false,
+        "label": "Đến tiệc BBQ",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\":\"Tiệc BBQ\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 980,
+        "y": 260,
+        "wires": [
+            [
+                "31125857093a9a5c"
+            ]
+        ]
+    },
+    {
+        "id": "332af1a921e21ff1",
+        "type": "ui_button",
+        "z": "8c5b202179f3c92c",
+        "g": "faee3982a2309356",
+        "name": "Đến quầy Bar",
+        "group": "e7667c46d87a7393",
+        "order": 2,
+        "width": 7,
+        "height": 1,
+        "passthru": false,
+        "label": "Đến quầy Bar",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\":\"Bar\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 980,
+        "y": 300,
+        "wires": [
+            [
+                "c9e5b9c34d028b7f"
+            ]
+        ]
+    },
+    {
+        "id": "31125857093a9a5c",
+        "type": "ui_ui_control",
+        "z": "8c5b202179f3c92c",
+        "g": "faee3982a2309356",
+        "name": "go to tab6",
+        "events": "all",
+        "x": 1180,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c9e5b9c34d028b7f",
+        "type": "ui_ui_control",
+        "z": "8c5b202179f3c92c",
+        "g": "faee3982a2309356",
+        "name": "go to tab7",
+        "events": "all",
+        "x": 1180,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a190df2203411224",
+        "type": "function",
+        "z": "8c5b202179f3c92c",
+        "name": "function 24",
+        "func": "const { payload } = msg;\nconst keys = Object.keys(payload);\nreturn {\n    payload: payload[keys[4]],\n};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 1220,
+        "wires": [
+            [
+                "f5861a32460c32b2"
+            ]
+        ]
+    },
+    {
+        "id": "f5861a32460c32b2",
+        "type": "ui_template",
+        "z": "8c5b202179f3c92c",
+        "group": "69191d7a3d759cfb",
+        "name": "ảnh tiệc BBQ",
+        "order": 1,
+        "width": 11,
+        "height": 6,
+        "format": "<img src=\"{{msg.payload}}\"></img>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 510,
+        "y": 1220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "24f5e65f5ea055eb",
+        "type": "ui_text",
+        "z": "8c5b202179f3c92c",
+        "group": "2db507a2eb558669",
+        "order": 2,
+        "width": 8,
+        "height": 1,
+        "name": "",
+        "label": "Chiếm dụng:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 490,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "35972d40385cf8c5",
+        "type": "function",
+        "z": "8c5b202179f3c92c",
+        "name": "function 25",
+        "func": "const { payload } = msg;\nconst keys = Object.keys(payload);\nreturn {\n    payload: payload[keys[(keys.length - 2)]],\n};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1620,
+        "wires": [
+            [
+                "24f5e65f5ea055eb"
+            ]
+        ]
+    },
+    {
+        "id": "3e494ba62917eef5",
+        "type": "function",
+        "z": "8c5b202179f3c92c",
+        "name": "function 26",
+        "func": "const { payload } = msg;\nconst keys = Object.keys(payload);\nreturn {\n    payload: payload[keys[3]],\n};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 1260,
+        "wires": [
+            [
+                "26fa672336399517"
+            ]
+        ]
+    },
+    {
+        "id": "26fa672336399517",
+        "type": "ui_template",
+        "z": "8c5b202179f3c92c",
+        "group": "d48330ddf2163e4d",
+        "name": "ảnh Bar",
+        "order": 2,
+        "width": 20,
+        "height": 12,
+        "format": "<img src=\"{{msg.payload}}\"></img>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 500,
+        "y": 1260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a4ce0da16b01300c",
+        "type": "ui_button",
+        "z": "8c5b202179f3c92c",
+        "g": "247dc461b88b1efb",
+        "name": "Về trang chủ",
+        "group": "69191d7a3d759cfb",
+        "order": 3,
+        "width": 19,
+        "height": 1,
+        "passthru": false,
+        "label": "Về trang chủ",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\":\"WELCOME TO D'CAPITALE\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 970,
+        "y": 720,
+        "wires": [
+            [
+                "ea598806ac9e6c22"
+            ]
+        ]
+    },
+    {
+        "id": "ea598806ac9e6c22",
+        "type": "ui_ui_control",
+        "z": "8c5b202179f3c92c",
+        "g": "247dc461b88b1efb",
+        "name": "go to tab1",
+        "events": "all",
+        "x": 1190,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a4adf5994a34ceb8",
+        "type": "comment",
+        "z": "8c5b202179f3c92c",
+        "g": "247dc461b88b1efb",
+        "name": "Buttons on tab4",
+        "info": "",
+        "x": 1080,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "ae7d5baf3a5b7e65",
+        "type": "ui_button",
+        "z": "8c5b202179f3c92c",
+        "g": "b53fedbc6101484c",
+        "name": "Về trang chủ",
+        "group": "d48330ddf2163e4d",
+        "order": 27,
+        "width": 20,
+        "height": 1,
+        "passthru": false,
+        "label": "Về trang chủ",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\":\"WELCOME TO D'CAPITALE\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 970,
+        "y": 860,
+        "wires": [
+            [
+                "2bcff73208317941"
+            ]
+        ]
+    },
+    {
+        "id": "2bcff73208317941",
+        "type": "ui_ui_control",
+        "z": "8c5b202179f3c92c",
+        "g": "b53fedbc6101484c",
+        "name": "go to tab1",
+        "events": "all",
+        "x": 1190,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b225d9c323233006",
+        "type": "comment",
+        "z": "8c5b202179f3c92c",
+        "g": "b53fedbc6101484c",
+        "name": "Buttons on tab5",
+        "info": "",
+        "x": 1080,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "0b13e39fd9877f8b",
+        "type": "function",
+        "z": "8c5b202179f3c92c",
+        "name": "function 27",
+        "func": "const { payload } = msg;\nconst keys = Object.keys(payload);\nreturn {\n    payload: payload[keys[6]],\n};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 1300,
+        "wires": [
+            [
+                "c24144606dc7a1f3"
+            ]
+        ]
+    },
+    {
+        "id": "c24144606dc7a1f3",
+        "type": "ui_template",
+        "z": "8c5b202179f3c92c",
+        "group": "1a00ea9c591f0a2b",
+        "name": "Ca sĩ khách mời",
+        "order": 4,
+        "width": 11,
+        "height": 11,
+        "format": "<img src=\"{{msg.payload}}\"></img>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 520,
+        "y": 1300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3e28ea9f6217de08",
+        "type": "comment",
+        "z": "8c5b202179f3c92c",
+        "name": "Độ ẩm bể bơi và sân bóng",
+        "info": "",
+        "x": 130,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "5a67d453703754d8",
+        "type": "comment",
+        "z": "8c5b202179f3c92c",
+        "name": "Áp suất bể bơi và sân bóng",
+        "info": "",
+        "x": 140,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "abc9472acf666bda",
+        "type": "comment",
+        "z": "8c5b202179f3c92c",
+        "name": "Nhiệt độ bể bơi và sân bóng",
+        "info": "",
+        "x": 140,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "c1e4243dcc8fe20f",
+        "type": "comment",
+        "z": "8c5b202179f3c92c",
+        "name": "Chiếm dụng bể bơi và sân bóng",
+        "info": "",
+        "x": 150,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "c776d5dc.13cb9",
+        "type": "ui_template",
+        "z": "8c5b202179f3c92c",
+        "group": "17687767200cd07f",
+        "name": "Clock Toolbar",
+        "order": 4,
+        "width": "0",
+        "height": "0",
+        "format": "<script id=\"titleScript\" type=\"text/javascript\">\n    $('#clock').remove();\n    var toolbar = $('.md-toolbar-tools');\n    var div = $('<div/>');\n    var p = $('<p/ id=\"clock\">');\n    \n    $('#titleScript').parent().hide();\n    div.append(p);\n    div[0].style.margin = '5px 5px 5px auto';\n    toolbar.append(div);\n\n    function displayTitle(lh) {\n        p.text(lh); \n    }\n    \n    function upTime() {\n        var d = new Date();\n        p.text(d.toLocaleTimeString('de-AT'));\n    }\n\n    \n\n    // Watch the payload and update the title\n    (function(scope) {\n        scope.$watch('msg.payload', function(data) {\n            displayTitle(data);\n        });\n        setInterval(upTime,1000);\n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 960,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a94d527c8b6c5001",
+        "type": "comment",
+        "z": "8c5b202179f3c92c",
+        "name": "Thời gian thực",
+        "info": "",
+        "x": 960,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "c5f5482df3fe6fe3",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 1,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "d3003665d237e04a",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 3,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "01eb8b132b387cdc",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 4,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "d8602a278f6450d4",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 5,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "31af878b42d5c0af",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 6,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "0ff0baf942394b28",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 7,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "e0ef25eb4337ad24",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 8,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "a156c04650a0e433",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 9,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "e2f643f5dd76da78",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 10,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "3d54e431fd321180",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 11,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "c828726b984a418f",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 12,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "9681a5639384c7c8",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 13,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "a44b79a361dcf392",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 14,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "30b1fad56d419c1f",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 15,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "c688ee6c6f303ef8",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 16,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "9df37231fe4d3b9b",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 17,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "69a03ff7ca638424",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 18,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "e6cccf08840a5bd0",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 19,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "2872dc93f7d512d6",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 20,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "a62365fc2bfd2815",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 21,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "8607c7df31dd2d72",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 22,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "456945d26842c388",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 23,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "e380b59597b59405",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 24,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "37f1d5669d042d34",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 25,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "6417507c48031c01",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "cb7c8aaaccb0c240",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8f4281f318e373f1",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "cb7c8aaaccb0c240",
+        "order": 3,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "a17372892f1b8a75",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "cb7c8aaaccb0c240",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c8588d0952f5bd53",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "cb7c8aaaccb0c240",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c5dba879addb95c2",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "cb7c8aaaccb0c240",
+        "order": 8,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "926379448bd3d125",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "cb7c8aaaccb0c240",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "457a38ea12c77c86",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "cb7c8aaaccb0c240",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5ebc72bdb465a6f8",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "cb7c8aaaccb0c240",
+        "order": 12,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "1562f723babe4b3e",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "cb7c8aaaccb0c240",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c2628c2954f4d5c1",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "7d7bc6b754fd872b",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "fe2872bd524a89cb",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "7d7bc6b754fd872b",
+        "order": 3,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "d8ecdcf5a4e62d65",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "7d7bc6b754fd872b",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "96013a16c8a313fb",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "7d7bc6b754fd872b",
+        "order": 6,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "088e5fb518650af4",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 1,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "934d12148a8e6244",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 3,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "13ddc17bae1e7fd1",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 4,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "f031f83577e3bdc2",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 5,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "3432afc60722c594",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 6,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "6eaa58468a6e0d78",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 7,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "adda044c23c0a309",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 8,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "89b0b9ab309c7a54",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 9,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "d80c02812c793607",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 10,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "a84790f67aa64096",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 11,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "6f5c86610ec8af2c",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 12,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "2e68799ede37ba9e",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 13,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "90d1401d404f9ff2",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 14,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "ddbe59aa40c0fcdb",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 15,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "22c3f0ef4c3442a4",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 16,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "29ad5e9a52c0bb4a",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 17,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "eaa39b156d607d12",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 18,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "9d6bc5458c5adbc1",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 19,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "405ceb474fe0f700",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 20,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "8c64cbdb4a3d1d08",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 21,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "5eb6b38c569d398f",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 22,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "8b513fdc2fe9da73",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 23,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "9488d491c736010b",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 24,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "c348978c38a725b4",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 25,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "7de552fca3ebdde8",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "6e6a8cd2cfac115c",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ed9382184dbd4f41",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "6e6a8cd2cfac115c",
+        "order": 3,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "3061f62bf82b6538",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "6e6a8cd2cfac115c",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "033c622d3ffca83b",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "6e6a8cd2cfac115c",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "aa1342a77204e12f",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "6e6a8cd2cfac115c",
+        "order": 8,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "082a8c17aacd5835",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "6e6a8cd2cfac115c",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "66eeabc8a13c25c9",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "6e6a8cd2cfac115c",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "60ac6befff98f281",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "6e6a8cd2cfac115c",
+        "order": 12,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "d49e84bc496bd3dc",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "6e6a8cd2cfac115c",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6ec42272c7128613",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "1cd9e7408925ae69",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9e454918903e3bc3",
+        "type": "ui_spacer",
+        "z": "8c5b202179f3c92c",
+        "name": "spacer",
+        "group": "1cd9e7408925ae69",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b25701a9d70f9a45",
+        "type": "ui_group",
+        "name": "Sân bóng rổ D'capitale",
+        "tab": "51510d448230ee7b",
+        "order": 3,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "57c0fa20410bbe40",
+        "type": "ui_group",
+        "name": "                        Bể bơi D'capitale",
+        "tab": "51510d448230ee7b",
+        "order": 2,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "17687767200cd07f",
+        "type": "ui_group",
+        "name": "Chọn khu vực bạn mong muốn để kiểm tra mật độ dân cư và chất lượng không khí",
+        "tab": "51510d448230ee7b",
+        "order": 1,
+        "disp": true,
+        "width": 28,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7d7bc6b754fd872b",
+        "type": "ui_group",
+        "name": "Lời khuyên cho bể bơi",
+        "tab": "6fd705cd22cae4d2",
+        "order": 3,
+        "disp": true,
+        "width": 14,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1cd9e7408925ae69",
+        "type": "ui_group",
+        "name": "Lời khuyên cho bóng rổ",
+        "tab": "d8a928af18a73bbb",
+        "order": 3,
+        "disp": true,
+        "width": 14,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3d1d649b5bc69b02",
+        "type": "ui_group",
+        "name": "Mật độ chiếm dụng và chất lượng không khí",
+        "tab": "6fd705cd22cae4d2",
+        "order": 1,
+        "disp": true,
+        "width": 28,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cb7c8aaaccb0c240",
+        "type": "ui_group",
+        "name": "Data bể bơi",
+        "tab": "6fd705cd22cae4d2",
+        "order": 2,
+        "disp": true,
+        "width": 14,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6e6a8cd2cfac115c",
+        "type": "ui_group",
+        "name": "Data bóng rổ",
+        "tab": "d8a928af18a73bbb",
+        "order": 2,
+        "disp": true,
+        "width": 14,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1541b6da94f4272a",
+        "type": "ui_group",
+        "name": "Mật độ chiếm dụng và chất lượng không khí",
+        "tab": "d8a928af18a73bbb",
+        "order": 1,
+        "disp": true,
+        "width": 28,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1a9014623af360d4",
+        "type": "ui_group",
+        "name": "Tiệc BBQ",
+        "tab": "51510d448230ee7b",
+        "order": 4,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e7667c46d87a7393",
+        "type": "ui_group",
+        "name": "Quầy bar ngoài trời",
+        "tab": "51510d448230ee7b",
+        "order": 5,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "69191d7a3d759cfb",
+        "type": "ui_group",
+        "name": "Mật độ chiếm dụng và chất lượng không khí",
+        "tab": "c5751d3f39192f9f",
+        "order": 1,
+        "disp": true,
+        "width": 19,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2db507a2eb558669",
+        "type": "ui_group",
+        "name": "Thông tin chiếm dụng",
+        "tab": "8526696a48c3d104",
+        "order": 1,
+        "disp": true,
+        "width": "11",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d48330ddf2163e4d",
+        "type": "ui_group",
+        "name": "Quán bar ngoài trời D'capitale",
+        "tab": "8526696a48c3d104",
+        "order": 2,
+        "disp": true,
+        "width": "22",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1a00ea9c591f0a2b",
+        "type": "ui_group",
+        "name": "Ca sĩ khách mời hôm nay: MONO (20:00)",
+        "tab": "8526696a48c3d104",
+        "order": 4,
+        "disp": true,
+        "width": 11,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "51510d448230ee7b",
+        "type": "ui_tab",
+        "name": "WELCOME TO D'CAPITALE",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false,
+        "info": "**WELCOME TO D'CAPITALE**"
+    },
+    {
+        "id": "6fd705cd22cae4d2",
+        "type": "ui_tab",
+        "name": "Bể bơi",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d8a928af18a73bbb",
+        "type": "ui_tab",
+        "name": "Sân bóng rổ",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c5751d3f39192f9f",
+        "type": "ui_tab",
+        "name": "Tiệc BBQ",
+        "icon": "dashboard",
+        "order": 6,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8526696a48c3d104",
+        "type": "ui_tab",
+        "name": "Bar",
+        "icon": "dashboard",
+        "order": 7,
+        "disabled": false,
+        "hidden": false
+    }
+]
