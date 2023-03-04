@@ -8,12 +8,43 @@
         "env": []
     },
     {
+        "id": "6f36066174de341a",
+        "type": "tab",
+        "label": "Ý kiến khách hàng",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5f56bf548348cf42",
+        "type": "tab",
+        "label": "Thông tin liên hệ",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e4586447e878f6e6",
+        "type": "tab",
+        "label": "Hệ thống thông báo và email",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "759172df9e4316ca",
+        "type": "tab",
+        "label": "Hệ thống đăng nhập",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "6241173ef1309ea6",
         "type": "group",
         "z": "8c5b202179f3c92c",
         "name": "",
         "style": {
-            "fill": "#ffefbf",
+            "fill": "#bfdbef",
             "label": true
         },
         "nodes": [
@@ -22,8 +53,8 @@
             "e4e85870c7866157"
         ],
         "x": 874,
-        "y": 359,
-        "w": 402,
+        "y": 979,
+        "w": 412,
         "h": 122
     },
     {
@@ -48,12 +79,21 @@
             "efdfca947fc987fa",
             "332af1a921e21ff1",
             "31125857093a9a5c",
-            "c9e5b9c34d028b7f"
+            "c9e5b9c34d028b7f",
+            "5aceeb9c429f7667",
+            "8c2d43af45faae6b",
+            "32383481b2491f51",
+            "b23592a035569ea9",
+            "b372dd3c5e379133",
+            "0f1787cf9953329c",
+            "d36153714fe21163",
+            "29e65266a9c1aa65",
+            "f4dba45f33d7ca8e"
         ],
         "x": 874,
         "y": 19,
-        "w": 392,
-        "h": 322
+        "w": 412,
+        "h": 522
     },
     {
         "id": "71314fcaeb861aba",
@@ -70,9 +110,43 @@
             "d8cae85b9f534f76"
         ],
         "x": 874,
-        "y": 499,
-        "w": 402,
+        "y": 559,
+        "w": 412,
         "h": 122
+    },
+    {
+        "id": "577b62c6e4156cb4",
+        "type": "group",
+        "z": "6f36066174de341a",
+        "name": "",
+        "style": {
+            "fill": "#ffefbf",
+            "label": true
+        },
+        "nodes": [
+            "00b9345461649f78",
+            "27d943e5acf95c85",
+            "3ccc337bbaf7f9b4"
+        ],
+        "x": 834,
+        "y": 39
+    },
+    {
+        "id": "5dd4df7fed529d8e",
+        "type": "group",
+        "z": "5f56bf548348cf42",
+        "name": "",
+        "style": {
+            "fill": "#ffefbf",
+            "label": true
+        },
+        "nodes": [
+            "3ae2f38da99f93a7",
+            "1eb5d4584f19354a",
+            "ea1c9e2a3e28618b"
+        ],
+        "x": 134,
+        "y": 219
     },
     {
         "id": "247dc461b88b1efb",
@@ -80,7 +154,7 @@
         "z": "8c5b202179f3c92c",
         "name": "",
         "style": {
-            "fill": "#ffefbf",
+            "fill": "#b797cf",
             "label": true
         },
         "nodes": [
@@ -89,8 +163,8 @@
             "a4adf5994a34ceb8"
         ],
         "x": 874,
-        "y": 639,
-        "w": 402,
+        "y": 699,
+        "w": 412,
         "h": 122
     },
     {
@@ -99,7 +173,7 @@
         "z": "8c5b202179f3c92c",
         "name": "",
         "style": {
-            "fill": "#ffefbf",
+            "fill": "#d1d1d1",
             "label": true
         },
         "nodes": [
@@ -108,9 +182,1628 @@
             "b225d9c323233006"
         ],
         "x": 874,
-        "y": 779,
-        "w": 402,
+        "y": 839,
+        "w": 412,
         "h": 122
+    },
+    {
+        "id": "43f6553f99a646ce",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#000000",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#016a5e",
+                    "value": "#000000",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#000000",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "group-borderColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Busetus",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 38,
+                "sy": 38,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "51510d448230ee7b",
+        "type": "ui_tab",
+        "name": "WELCOME TO D'CAPITALE",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false,
+        "info": "**WELCOME TO D'CAPITALE**"
+    },
+    {
+        "id": "17687767200cd07f",
+        "type": "ui_group",
+        "name": "Dcapitale - Tổ hợp căn hộ hạng sang tại Trần Duy Hưng",
+        "tab": "51510d448230ee7b",
+        "order": 2,
+        "disp": true,
+        "width": "28",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e0113f5b95b7909a",
+        "type": "firebase config",
+        "firebaseurl": "test-5b0a6-default-rtdb",
+        "loginType": "none"
+    },
+    {
+        "id": "3259e6c832892b5b",
+        "type": "firebase-config",
+        "name": "ok",
+        "cred": "ok",
+        "dburl": "ok",
+        "bucket": "ok"
+    },
+    {
+        "id": "ceeb156878ada95a",
+        "type": "firebase config",
+        "firebaseurl": "smarttrap2022-9f9e7-default-rtdb",
+        "loginType": "none"
+    },
+    {
+        "id": "339d0edc.4ffe02",
+        "type": "ui_group",
+        "name": "Heure",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "bdf77f28.7118c8",
+        "type": "ui_group",
+        "name": "Klimaat",
+        "tab": null,
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "bec4a4a3.5c9928",
+        "type": "ui_group",
+        "name": "test",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "3d9e45e.bcd50ba",
+        "type": "ui_group",
+        "name": "Radial Gauges",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "c1c208a05af08b08",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "b7378d0e.f1c9c",
+        "type": "ui_group",
+        "name": "Buttons",
+        "tab": "",
+        "order": 4,
+        "disp": false,
+        "width": 30,
+        "collapse": false
+    },
+    {
+        "id": "3b2f6450.209d1c",
+        "type": "ui_group",
+        "name": "Buttons",
+        "tab": "",
+        "order": 3,
+        "disp": false,
+        "width": 30,
+        "collapse": false
+    },
+    {
+        "id": "7352f5ff.21627c",
+        "type": "ui_group",
+        "name": "Buttons",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": 30,
+        "collapse": false
+    },
+    {
+        "id": "d85af320.76327",
+        "type": "ui_group",
+        "name": "Buttons",
+        "tab": "",
+        "order": 2,
+        "disp": false,
+        "width": 30,
+        "collapse": false
+    },
+    {
+        "id": "d2867c6a.11bb8",
+        "type": "ui_group",
+        "name": "Config",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "d6fe70210bd41a88",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "2d4fe667.28f8ba",
+        "type": "ui_group",
+        "name": "demo",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "fb2cf18988b0c41d",
+        "type": "ui_group",
+        "name": "tab1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1541b6da94f4272a",
+        "type": "ui_group",
+        "name": "Chào mừng đến với sân bóng rổ D'capitale!",
+        "tab": "d8a928af18a73bbb",
+        "order": 1,
+        "disp": true,
+        "width": "28",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3d1d649b5bc69b02",
+        "type": "ui_group",
+        "name": "Chào mừng đến với bể bơi D'capitale!",
+        "tab": "6fd705cd22cae4d2",
+        "order": 1,
+        "disp": true,
+        "width": "28",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d8a928af18a73bbb",
+        "type": "ui_tab",
+        "name": "Sân bóng rổ",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "6fd705cd22cae4d2",
+        "type": "ui_tab",
+        "name": "Bể bơi",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "57c0fa20410bbe40",
+        "type": "ui_group",
+        "name": "                        Bể bơi D'capitale",
+        "tab": "51510d448230ee7b",
+        "order": 3,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b25701a9d70f9a45",
+        "type": "ui_group",
+        "name": "Sân bóng rổ D'capitale",
+        "tab": "51510d448230ee7b",
+        "order": 4,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e7667c46d87a7393",
+        "type": "ui_group",
+        "name": "Quầy bar ngoài trời",
+        "tab": "51510d448230ee7b",
+        "order": 6,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1a9014623af360d4",
+        "type": "ui_group",
+        "name": "Tiệc BBQ",
+        "tab": "51510d448230ee7b",
+        "order": 5,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "089ea9f9eaa915eb",
+        "type": "ui_group",
+        "name": "Ý kiến",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "49729339d4f32028",
+        "type": "ui_group",
+        "name": "Ý kiến cc",
+        "tab": null,
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d06c2ecd58a11c84",
+        "type": "ui_group",
+        "name": "Ý kiến",
+        "tab": null,
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "833c2181b5efb83c",
+        "type": "ui_tab",
+        "name": "Ý kiến khách hàng",
+        "icon": "dashboard",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d574ef2773b6da92",
+        "type": "ui_group",
+        "name": "Gửi những ý kiến đóng góp của bạn tới Ban quản lý D'capitale",
+        "tab": "833c2181b5efb83c",
+        "order": 1,
+        "disp": true,
+        "width": 26,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a51029234ce616a4",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "a76b3f80e42f80ee",
+        "type": "ui_tab",
+        "name": "Hỗ trợ khách hàng",
+        "icon": "dashboard",
+        "order": 6,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a07370bb14ee1bca",
+        "type": "ui_group",
+        "name": "Thông tin liên hệ",
+        "tab": "a76b3f80e42f80ee",
+        "order": 1,
+        "disp": true,
+        "width": 18,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c5751d3f39192f9f",
+        "type": "ui_tab",
+        "name": "Tiệc BBQ",
+        "icon": "dashboard",
+        "order": 7,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "69191d7a3d759cfb",
+        "type": "ui_group",
+        "name": "Form đăng ký lịch tổ chức tiệc BBQ",
+        "tab": "c5751d3f39192f9f",
+        "order": 1,
+        "disp": true,
+        "width": "28",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7d7bc6b754fd872b",
+        "type": "ui_group",
+        "name": "Lời khuyên cho khu bể bơi",
+        "tab": "6fd705cd22cae4d2",
+        "order": 3,
+        "disp": true,
+        "width": "14",
+        "collapse": false,
+        "className": "advice-box"
+    },
+    {
+        "id": "cb7c8aaaccb0c240",
+        "type": "ui_group",
+        "name": "Data bể bơi",
+        "tab": "6fd705cd22cae4d2",
+        "order": 2,
+        "disp": true,
+        "width": 14,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1cd9e7408925ae69",
+        "type": "ui_group",
+        "name": "Lời khuyên cho sân bóng rổ",
+        "tab": "d8a928af18a73bbb",
+        "order": 3,
+        "disp": true,
+        "width": "14",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6e6a8cd2cfac115c",
+        "type": "ui_group",
+        "name": "Data bóng rổ",
+        "tab": "d8a928af18a73bbb",
+        "order": 2,
+        "disp": true,
+        "width": 14,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8526696a48c3d104",
+        "type": "ui_tab",
+        "name": "Bar",
+        "icon": "dashboard",
+        "order": 10,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2db507a2eb558669",
+        "type": "ui_group",
+        "name": "Thông tin chiếm dụng",
+        "tab": "8526696a48c3d104",
+        "order": 1,
+        "disp": true,
+        "width": "11",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d48330ddf2163e4d",
+        "type": "ui_group",
+        "name": "Chào mừng đến với quán bar ngoài trời D'capitale!",
+        "tab": "8526696a48c3d104",
+        "order": 2,
+        "disp": true,
+        "width": "22",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "347da12bbd1eed51",
+        "type": "ui_group",
+        "name": "Lời khuyên",
+        "tab": "8526696a48c3d104",
+        "order": 3,
+        "disp": true,
+        "width": "11",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1a00ea9c591f0a2b",
+        "type": "ui_group",
+        "name": "Ca sĩ khách mời hôm nay: MONO (20:00)",
+        "tab": "8526696a48c3d104",
+        "order": 4,
+        "disp": true,
+        "width": 11,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cbd3ecb4.7a42c8",
+        "type": "ui_group",
+        "name": "Temperatuur Node",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "12"
+    },
+    {
+        "id": "963d0f03ab1d7be9",
+        "type": "ui_group",
+        "name": "Menu Bar",
+        "tab": "8526696a48c3d104",
+        "order": 5,
+        "disp": true,
+        "width": "22",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c4541dbf1158d78e",
+        "type": "ui_group",
+        "name": "Menu BBQ",
+        "tab": "c5751d3f39192f9f",
+        "order": 2,
+        "disp": true,
+        "width": 28,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e38cfdec491e07cd",
+        "type": "ui_group",
+        "name": "Sân bóng đá D'capitale",
+        "tab": "51510d448230ee7b",
+        "order": 8,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5b4ac65b1046c058",
+        "type": "ui_group",
+        "name": "Khu vui chơi trẻ em",
+        "tab": "51510d448230ee7b",
+        "order": 9,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "dc3c4d0ea886df16",
+        "type": "ui_group",
+        "name": "Phòng gym D'capitale",
+        "tab": "51510d448230ee7b",
+        "order": 7,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "93571fe10f410659",
+        "type": "ui_group",
+        "name": "Quán cafe",
+        "tab": "51510d448230ee7b",
+        "order": 10,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b82da486.9fc8d8",
+        "type": "ui_group",
+        "name": "Signin",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "c35e46a8.b04ce8",
+        "type": "ui_group",
+        "name": "SensorData",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "4de9506d.e7364",
+        "type": "ui_group",
+        "name": "History",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "e084c00825904bd7",
+        "type": "ui_group",
+        "name": "Đăng nhập dành cho khách hàng",
+        "tab": "7620156e5f8e545c",
+        "order": 1,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1b209845d7a898f1",
+        "type": "ui_tab",
+        "name": "Dịch vụ BBQ",
+        "icon": "dashboard",
+        "order": 8,
+        "disabled": false,
+        "hidden": true
+    },
+    {
+        "id": "1a2eae6e1ad2d89b",
+        "type": "ui_group",
+        "name": "Quản lý danh sách khách hàng đăng ký lịch BBQ",
+        "tab": "1b209845d7a898f1",
+        "order": 1,
+        "disp": true,
+        "width": 28,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "877974671a18c3fc",
+        "type": "websocket-listener",
+        "path": "/khach",
+        "wholemsg": "false"
+    },
+    {
+        "id": "1610cb1cd1e52be9",
+        "type": "ui_group",
+        "name": "Đăng nhập dành cho quản lý",
+        "tab": "7620156e5f8e545c",
+        "order": 2,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "27c5afc924791940",
+        "type": "ui_group",
+        "name": "D'capitale - Nơi mỗi giây phút sống tựa như nghỉ dưỡng!",
+        "tab": "7620156e5f8e545c",
+        "order": 3,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ca2272c3.e8396",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "d9bf7560.df5e58",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "d9bf7560.df5e58",
+        "type": "ui_tab",
+        "name": "Test",
+        "icon": "dashboard",
+        "order": 9,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "7a2b94ccfae2dd95",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 1,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "068f984edd4a7cd6",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 3,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "2b55f871933a776b",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 4,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "a2583df7419595a4",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 5,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "f75929db74127fb4",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 6,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "220d1b5274407ef8",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 7,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "99039591791a26f3",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 8,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "570e143887ebfc1b",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 9,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "653aace75a272afc",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 10,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "4fe5b7492b1e74f7",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 11,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "51d44f7e08c5bf6c",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 12,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "6ff29df601548bf3",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 13,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "85fdb35421860d33",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 14,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "94e023ecacd2842c",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 15,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "2dcaddf98b0dac1d",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 16,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "59808204c727d4f2",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 17,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "6081f74af6222f1d",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 18,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "16d15f801ee1a5d4",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 19,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "f7bf9de4bfc43816",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 20,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "22020a9ae28f7c78",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 21,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "0d26edc1f1aaca1f",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 22,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "d4efee68870e4680",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 23,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "18b36e1299f5a62f",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 24,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "97b233a630300396",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "3d1d649b5bc69b02",
+        "order": 25,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "cc45277a5eeab409",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "cb7c8aaaccb0c240",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ecf9a9763a99e12f",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "cb7c8aaaccb0c240",
+        "order": 3,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "972a68b7c684cd6a",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "cb7c8aaaccb0c240",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0334a383058667e8",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "cb7c8aaaccb0c240",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "cd8445bf7b6aa0b7",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "cb7c8aaaccb0c240",
+        "order": 8,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "0fa3999bdc078629",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "cb7c8aaaccb0c240",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3c9a47ebb20f85ac",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "cb7c8aaaccb0c240",
+        "order": 11,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "01ced19134da7e3c",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "7d7bc6b754fd872b",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "17fe3ca3321ec588",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "7d7bc6b754fd872b",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "377f3a846b72ea0f",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 1,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "644e9bba825e6de6",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 3,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "b8e6cab949b722b9",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 4,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "2e35e3d547f0ca1c",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 5,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "31d0e182fd70b38d",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 6,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "90652f6305afb566",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 7,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "bb6994323794bf95",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 8,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "9a5cf7767fdd2e04",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 9,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "3a43e8098daa5f4b",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 10,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "503e3e0551da43c2",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 11,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "9aeab2a9e4415958",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 12,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "4443ad827d2d6394",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 13,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "9a7f287fbf65d01d",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 14,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "befaad96766e2bfb",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 15,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "a68a013f4d952b5f",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 16,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "3576f247e20d6968",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 17,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "5b7fc15659fa506a",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 18,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "bdb9fb2dfe2c1e67",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 19,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "57c632f7cdf275bc",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 20,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "1b8fe43429fd5f11",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 21,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "a7b236975d19f1e1",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 22,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "be0860ec691381e7",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 23,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "84292c0393715e56",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 24,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "739667b485beae86",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "1541b6da94f4272a",
+        "order": 25,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "29286f3cc02bb763",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "6e6a8cd2cfac115c",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "790664f6e8738923",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "6e6a8cd2cfac115c",
+        "order": 3,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "0d1af759d7ae70ed",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "6e6a8cd2cfac115c",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "582d421d2cc609de",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "6e6a8cd2cfac115c",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "fc7b018d5bcca00b",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "6e6a8cd2cfac115c",
+        "order": 8,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "78f8f25a7b7d0d6a",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "6e6a8cd2cfac115c",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f3736fd8a319edb8",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "6e6a8cd2cfac115c",
+        "order": 11,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "c4de067e23e00e08",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "1cd9e7408925ae69",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d3fe5a8478b337f0",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "1cd9e7408925ae69",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "1deed69fcda2c602",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "5c4d39b567c71a51",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "62b44eba9c39b679",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "db5f25b4b4c5ca8e",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "205ac72e296cb65f",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "5142458f484f3e53",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "cc7d7ea92ffb628f",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "152c5964d720afc7",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a40bb0d9c16471df",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "fc0af643ec51fbb4",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "5059b82f133deda2",
+        "type": "ui_group",
+        "name": "Tab",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4e15518d.02b1a",
+        "type": "ui_group",
+        "name": "indicate your credentials",
+        "tab": "d9365e0f.e1bf6",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "f590a74e.55cc88",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "5677487e.117ef8",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "638fcb3317c2bc0b",
+        "type": "ui_group",
+        "name": "Tab",
+        "tab": "",
+        "order": 2,
+        "disp": false,
+        "width": "25",
+        "collapse": false
+    },
+    {
+        "id": "a5db30a00e5593a0",
+        "type": "ui_group",
+        "name": "Login",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0aba9b6ccec47592",
+        "type": "ui_group",
+        "name": "Khu đăng nhập dành cho nhân viên",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ef4f0e0fe450287f",
+        "type": "ui_group",
+        "name": "Khu vực đăng nhập dành cho nhân viên",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "10a9b1809b406313",
+        "type": "ui_group",
+        "name": "Khu vực đăng nhập dành cho nhân viên",
+        "tab": "51510d448230ee7b",
+        "order": 10,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f698c130bc71244d",
+        "type": "ui_tab",
+        "name": "Khu vực đăng nhập dành cho nhân viên",
+        "icon": "dashboard",
+        "order": 10,
+        "disabled": false,
+        "hidden": true
+    },
+    {
+        "id": "281d349dbc6864de",
+        "type": "ui_group",
+        "name": "Điền mã nhân viên và mật khẩu",
+        "tab": "f698c130bc71244d",
+        "order": 1,
+        "disp": true,
+        "width": 18,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b457a464d669296c",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "a07370bb14ee1bca",
+        "order": 2,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "560677b06fb96a8f",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "a07370bb14ee1bca",
+        "order": 3,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "844fccae147ab7b5",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "a07370bb14ee1bca",
+        "order": 6,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "62587ebb0d35a360",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "a07370bb14ee1bca",
+        "order": 9,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "c68bd7fae9cc4339",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "a07370bb14ee1bca",
+        "order": 10,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "1bd28c9c16dbd2ec",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "a07370bb14ee1bca",
+        "order": 11,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "0fb75d264f8a8d4b",
+        "type": "ui_spacer",
+        "z": "e4586447e878f6e6",
+        "name": "spacer",
+        "group": "1a2eae6e1ad2d89b",
+        "order": 2,
+        "width": 15,
+        "height": 1
     },
     {
         "id": "bf1105ce4b673806",
@@ -176,20 +1869,27 @@
         "type": "firebase.on",
         "z": "8c5b202179f3c92c",
         "name": "",
-        "firebaseconfig": "",
+        "firebaseconfig": "ceeb156878ada95a",
         "childpath": "/Image URL Storage",
         "atStart": true,
         "eventType": "value",
         "queries": [],
         "x": 320,
-        "y": 40,
+        "y": 60,
         "wires": [
             [
                 "bf1105ce4b673806",
                 "373e5de2f111debc",
                 "234e7b78174c14ab",
                 "89c2cbe3c6516871",
-                "41e7bbc13484c0c7"
+                "41e7bbc13484c0c7",
+                "edb930f96a8a01c5",
+                "22ae23af6d6de4df",
+                "5670def7ac1f5c5d",
+                "d00fbb3b3c47a43f",
+                "0b96ac80917a7878",
+                "b803200851697700",
+                "cad90f4ede0b44bc"
             ]
         ]
     },
@@ -205,7 +1905,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 160,
+        "y": 140,
         "wires": [
             [
                 "9975608795f978a7"
@@ -228,7 +1928,7 @@
         "templateScope": "local",
         "className": "",
         "x": 510,
-        "y": 160,
+        "y": 140,
         "wires": [
             [
                 "eb150d80a21e5b16"
@@ -264,7 +1964,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 220,
+        "y": 180,
         "wires": [
             [
                 "dfeb9d5eecc6f3ee"
@@ -277,9 +1977,9 @@
         "z": "8c5b202179f3c92c",
         "group": "17687767200cd07f",
         "name": "Ảnh giới thiệu",
-        "order": 2,
-        "width": 22,
-        "height": 8,
+        "order": 1,
+        "width": 28,
+        "height": 10,
         "format": "<img src=\"{{msg.payload}}\"></img>",
         "storeOutMessages": true,
         "fwdInMessages": true,
@@ -287,7 +1987,7 @@
         "templateScope": "local",
         "className": "",
         "x": 520,
-        "y": 220,
+        "y": 180,
         "wires": [
             [
                 "4b00d374690b5180"
@@ -322,7 +2022,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 500,
+        "y": 680,
         "wires": [
             [
                 "01a62297628eab28"
@@ -334,13 +2034,13 @@
         "type": "firebase.on",
         "z": "8c5b202179f3c92c",
         "name": "",
-        "firebaseconfig": "",
-        "childpath": "/Environment Sensor Storage/BME Storage/Humidity",
+        "firebaseconfig": "ceeb156878ada95a",
+        "childpath": "/Services Data Storage/BME Data Storage/Humidity",
         "atStart": true,
         "eventType": "value",
         "queries": [],
         "x": 420,
-        "y": 440,
+        "y": 620,
         "wires": [
             [
                 "0cce8b5713abb65a",
@@ -360,7 +2060,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 740,
+        "y": 860,
         "wires": [
             [
                 "62669e9214ffaf67"
@@ -379,7 +2079,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 940,
+        "y": 1020,
         "wires": [
             [
                 "f30fdad4033a44b1"
@@ -391,13 +2091,13 @@
         "type": "firebase.on",
         "z": "8c5b202179f3c92c",
         "name": "",
-        "firebaseconfig": "",
-        "childpath": "/Environment Sensor Storage/BME Storage/Pressure",
+        "firebaseconfig": "ceeb156878ada95a",
+        "childpath": "/Services Data Storage/BME Data Storage/Pressure",
         "atStart": true,
         "eventType": "value",
         "queries": [],
         "x": 420,
-        "y": 680,
+        "y": 800,
         "wires": [
             [
                 "a5eb3252454fbbff",
@@ -410,13 +2110,13 @@
         "type": "firebase.on",
         "z": "8c5b202179f3c92c",
         "name": "",
-        "firebaseconfig": "",
-        "childpath": "/Environment Sensor Storage/BME Storage/Temperature",
+        "firebaseconfig": "ceeb156878ada95a",
+        "childpath": "/Services Data Storage/BME Data Storage/Temperature",
         "atStart": true,
         "eventType": "value",
         "queries": [],
         "x": 430,
-        "y": 880,
+        "y": 960,
         "wires": [
             [
                 "427b9363072b7410",
@@ -431,7 +2131,7 @@
         "g": "6241173ef1309ea6",
         "name": "Chọn địa điểm khác",
         "group": "7d7bc6b754fd872b",
-        "order": 7,
+        "order": 4,
         "width": 14,
         "height": 1,
         "passthru": false,
@@ -446,7 +2146,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 1000,
-        "y": 440,
+        "y": 1060,
         "wires": [
             [
                 "8d5a72ea8e708723"
@@ -460,8 +2160,8 @@
         "g": "6241173ef1309ea6",
         "name": "go to tab1",
         "events": "all",
-        "x": 1190,
-        "y": 440,
+        "x": 1200,
+        "y": 1060,
         "wires": [
             []
         ]
@@ -474,7 +2174,7 @@
         "name": "Buttons on tab2",
         "info": "",
         "x": 1080,
-        "y": 400,
+        "y": 1020,
         "wires": []
     },
     {
@@ -579,7 +2279,7 @@
         "g": "71314fcaeb861aba",
         "name": "Chọn địa điểm khác",
         "group": "1cd9e7408925ae69",
-        "order": 5,
+        "order": 4,
         "width": 14,
         "height": 1,
         "passthru": false,
@@ -594,7 +2294,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 1000,
-        "y": 580,
+        "y": 640,
         "wires": [
             [
                 "916620440f5b73d1"
@@ -608,8 +2308,8 @@
         "g": "71314fcaeb861aba",
         "name": "go to tab1",
         "events": "all",
-        "x": 1190,
-        "y": 580,
+        "x": 1200,
+        "y": 640,
         "wires": [
             []
         ]
@@ -622,7 +2322,7 @@
         "name": "Buttons on tab3",
         "info": "",
         "x": 1080,
-        "y": 540,
+        "y": 600,
         "wires": []
     },
     {
@@ -637,7 +2337,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 1140,
+        "y": 1180,
         "wires": [
             [
                 "faf910523a025345"
@@ -660,7 +2360,7 @@
         "templateScope": "local",
         "className": "",
         "x": 510,
-        "y": 1140,
+        "y": 1180,
         "wires": [
             [
                 "3b629838f843a5bc"
@@ -681,7 +2381,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 680,
-        "y": 1140,
+        "y": 1180,
         "wires": []
     },
     {
@@ -689,13 +2389,13 @@
         "type": "firebase.on",
         "z": "8c5b202179f3c92c",
         "name": "",
-        "firebaseconfig": "",
+        "firebaseconfig": "ceeb156878ada95a",
         "childpath": "/Image URL Storage",
         "atStart": true,
         "eventType": "value",
         "queries": [],
         "x": 320,
-        "y": 1080,
+        "y": 1120,
         "wires": [
             [
                 "754341a7a323a8bd",
@@ -715,12 +2415,12 @@
         "width": 5,
         "height": 2,
         "name": "",
-        "label": "Độ ẩm:",
+        "label": "💧 Độ ẩm:",
         "format": "{{msg.payload}}",
-        "layout": "row-center",
+        "layout": "row-left",
         "className": "",
         "x": 480,
-        "y": 500,
+        "y": 680,
         "wires": []
     },
     {
@@ -732,12 +2432,12 @@
         "width": 5,
         "height": 1,
         "name": "",
-        "label": "Áp suất: ",
+        "label": "🌀 Áp suất: ",
         "format": "{{msg.payload}}",
-        "layout": "row-center",
+        "layout": "row-left",
         "className": "",
-        "x": 480,
-        "y": 740,
+        "x": 490,
+        "y": 860,
         "wires": []
     },
     {
@@ -749,12 +2449,12 @@
         "width": 5,
         "height": 1,
         "name": "",
-        "label": "Nhiệt độ:",
+        "label": "🌡 Nhiệt độ:",
         "format": "{{msg.payload}}",
-        "layout": "row-center",
+        "layout": "row-left",
         "className": "",
-        "x": 480,
-        "y": 940,
+        "x": 490,
+        "y": 1020,
         "wires": []
     },
     {
@@ -781,12 +2481,12 @@
         "type": "firebase.on",
         "z": "8c5b202179f3c92c",
         "name": "",
-        "firebaseconfig": "",
-        "childpath": "/Environment Sensor Storage/BME Storage/Appropriate",
+        "firebaseconfig": "ceeb156878ada95a",
+        "childpath": "/Services Data Storage/Extensions/Appropriate",
         "atStart": true,
         "eventType": "value",
         "queries": [],
-        "x": 420,
+        "x": 390,
         "y": 1440,
         "wires": [
             [
@@ -802,14 +2502,14 @@
         "z": "8c5b202179f3c92c",
         "group": "cb7c8aaaccb0c240",
         "order": 9,
-        "width": 5,
+        "width": 6,
         "height": 2,
         "name": "",
-        "label": "Chiếm dụng:",
+        "label": "🙆‍♂️ Chiếm dụng:",
         "format": "{{msg.payload}}",
-        "layout": "row-center",
+        "layout": "row-left",
         "className": "",
-        "x": 480,
+        "x": 490,
         "y": 1500,
         "wires": []
     },
@@ -820,8 +2520,8 @@
         "g": "faee3982a2309356",
         "name": "Ý kiến khách hàng",
         "group": "17687767200cd07f",
-        "order": 21,
-        "width": 7,
+        "order": 2,
+        "width": 11,
         "height": 1,
         "passthru": false,
         "label": "Ý kiến khách hàng",
@@ -867,7 +2567,7 @@
         "finalize": "",
         "libs": [],
         "x": 330,
-        "y": 540,
+        "y": 720,
         "wires": [
             [
                 "f92db7686c892ceb"
@@ -883,12 +2583,12 @@
         "width": 5,
         "height": 2,
         "name": "",
-        "label": "Độ ẩm:",
+        "label": "💧 Độ ẩm:",
         "format": "{{msg.payload}}",
-        "layout": "row-center",
+        "layout": "row-left",
         "className": "",
         "x": 490,
-        "y": 540,
+        "y": 720,
         "wires": []
     },
     {
@@ -903,7 +2603,7 @@
         "finalize": "",
         "libs": [],
         "x": 330,
-        "y": 800,
+        "y": 920,
         "wires": [
             [
                 "daf14d7289f028b2"
@@ -919,12 +2619,12 @@
         "width": 5,
         "height": 1,
         "name": "",
-        "label": "Áp suất: ",
+        "label": "🌀 Áp suất: ",
         "format": "{{msg.payload}}",
-        "layout": "row-center",
+        "layout": "row-left",
         "className": "",
-        "x": 490,
-        "y": 800,
+        "x": 500,
+        "y": 920,
         "wires": []
     },
     {
@@ -939,7 +2639,7 @@
         "finalize": "",
         "libs": [],
         "x": 330,
-        "y": 1000,
+        "y": 1080,
         "wires": [
             [
                 "9036d4ed1e35f0d7"
@@ -955,12 +2655,12 @@
         "width": 5,
         "height": 1,
         "name": "",
-        "label": "Nhiệt độ:",
+        "label": "🌡 Nhiệt độ:",
         "format": "{{msg.payload}}",
-        "layout": "row-center",
+        "layout": "row-left",
         "className": "",
-        "x": 490,
-        "y": 1000,
+        "x": 500,
+        "y": 1080,
         "wires": []
     },
     {
@@ -969,14 +2669,14 @@
         "z": "8c5b202179f3c92c",
         "group": "6e6a8cd2cfac115c",
         "order": 9,
-        "width": 5,
+        "width": 6,
         "height": 2,
         "name": "",
-        "label": "Chiếm dụng:",
+        "label": "🙆‍♂️  Chiếm dụng:",
         "format": "{{msg.payload}}",
-        "layout": "row-center",
+        "layout": "row-left",
         "className": "",
-        "x": 490,
+        "x": 500,
         "y": 1560,
         "wires": []
     },
@@ -1011,7 +2711,7 @@
         "finalize": "",
         "libs": [],
         "x": 330,
-        "y": 1180,
+        "y": 1220,
         "wires": [
             [
                 "e6b90d69bec29b34"
@@ -1034,7 +2734,7 @@
         "templateScope": "local",
         "className": "",
         "x": 510,
-        "y": 1180,
+        "y": 1220,
         "wires": [
             []
         ]
@@ -1046,8 +2746,8 @@
         "g": "faee3982a2309356",
         "name": "Hỗ trợ khách hàng",
         "group": "17687767200cd07f",
-        "order": 20,
-        "width": 7,
+        "order": 3,
+        "width": 11,
         "height": 1,
         "passthru": false,
         "label": "Hỗ trợ khách hàng",
@@ -1097,7 +2797,7 @@
         "templateScope": "local",
         "className": "",
         "x": 500,
-        "y": 340,
+        "y": 260,
         "wires": [
             []
         ]
@@ -1118,27 +2818,10 @@
         "templateScope": "local",
         "className": "",
         "x": 500,
-        "y": 280,
+        "y": 220,
         "wires": [
             []
         ]
-    },
-    {
-        "id": "09b0583e104fec27",
-        "type": "debug",
-        "z": "8c5b202179f3c92c",
-        "name": "debug 12",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 630,
-        "y": 1500,
-        "wires": []
     },
     {
         "id": "90c4476b14f79d8d",
@@ -1154,7 +2837,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 640,
-        "y": 500,
+        "y": 680,
         "wires": []
     },
     {
@@ -1170,7 +2853,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 640,
-        "y": 740,
+        "y": 860,
         "wires": []
     },
     {
@@ -1187,7 +2870,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 640,
-        "y": 940,
+        "y": 1020,
         "wires": []
     },
     {
@@ -1202,7 +2885,7 @@
         "finalize": "",
         "libs": [],
         "x": 330,
-        "y": 280,
+        "y": 220,
         "wires": [
             [
                 "d4c193eac0c82c68"
@@ -1221,7 +2904,7 @@
         "finalize": "",
         "libs": [],
         "x": 330,
-        "y": 340,
+        "y": 260,
         "wires": [
             [
                 "dd8da7d84b018079"
@@ -1324,7 +3007,7 @@
         "finalize": "",
         "libs": [],
         "x": 330,
-        "y": 1220,
+        "y": 1260,
         "wires": [
             [
                 "f5861a32460c32b2"
@@ -1337,9 +3020,9 @@
         "z": "8c5b202179f3c92c",
         "group": "69191d7a3d759cfb",
         "name": "ảnh tiệc BBQ",
-        "order": 1,
-        "width": 11,
-        "height": 6,
+        "order": 2,
+        "width": 16,
+        "height": 7,
         "format": "<img src=\"{{msg.payload}}\"></img>",
         "storeOutMessages": true,
         "fwdInMessages": true,
@@ -1347,7 +3030,7 @@
         "templateScope": "local",
         "className": "",
         "x": 510,
-        "y": 1220,
+        "y": 1260,
         "wires": [
             []
         ]
@@ -1357,15 +3040,15 @@
         "type": "ui_text",
         "z": "8c5b202179f3c92c",
         "group": "2db507a2eb558669",
-        "order": 2,
-        "width": 8,
-        "height": 1,
+        "order": 1,
+        "width": 11,
+        "height": 2,
         "name": "",
-        "label": "Chiếm dụng:",
+        "label": "🙆‍♂️  Chiếm dụng:",
         "format": "{{msg.payload}}",
         "layout": "row-left",
         "className": "",
-        "x": 490,
+        "x": 500,
         "y": 1620,
         "wires": []
     },
@@ -1400,7 +3083,7 @@
         "finalize": "",
         "libs": [],
         "x": 330,
-        "y": 1260,
+        "y": 1300,
         "wires": [
             [
                 "26fa672336399517"
@@ -1413,9 +3096,9 @@
         "z": "8c5b202179f3c92c",
         "group": "d48330ddf2163e4d",
         "name": "ảnh Bar",
-        "order": 2,
-        "width": 20,
-        "height": 12,
+        "order": 1,
+        "width": 22,
+        "height": 13,
         "format": "<img src=\"{{msg.payload}}\"></img>",
         "storeOutMessages": true,
         "fwdInMessages": true,
@@ -1423,7 +3106,7 @@
         "templateScope": "local",
         "className": "",
         "x": 500,
-        "y": 1260,
+        "y": 1300,
         "wires": [
             []
         ]
@@ -1434,10 +3117,10 @@
         "z": "8c5b202179f3c92c",
         "g": "247dc461b88b1efb",
         "name": "Về trang chủ",
-        "group": "69191d7a3d759cfb",
-        "order": 3,
-        "width": 19,
-        "height": 1,
+        "group": "c4541dbf1158d78e",
+        "order": 2,
+        "width": 0,
+        "height": 0,
         "passthru": false,
         "label": "Về trang chủ",
         "tooltip": "",
@@ -1450,7 +3133,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 970,
-        "y": 720,
+        "y": 780,
         "wires": [
             [
                 "ea598806ac9e6c22"
@@ -1464,8 +3147,8 @@
         "g": "247dc461b88b1efb",
         "name": "go to tab1",
         "events": "all",
-        "x": 1190,
-        "y": 720,
+        "x": 1200,
+        "y": 780,
         "wires": [
             []
         ]
@@ -1478,7 +3161,7 @@
         "name": "Buttons on tab4",
         "info": "",
         "x": 1080,
-        "y": 680,
+        "y": 740,
         "wires": []
     },
     {
@@ -1488,8 +3171,8 @@
         "g": "b53fedbc6101484c",
         "name": "Về trang chủ",
         "group": "d48330ddf2163e4d",
-        "order": 27,
-        "width": 20,
+        "order": 2,
+        "width": 22,
         "height": 1,
         "passthru": false,
         "label": "Về trang chủ",
@@ -1503,7 +3186,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 970,
-        "y": 860,
+        "y": 920,
         "wires": [
             [
                 "2bcff73208317941"
@@ -1517,8 +3200,8 @@
         "g": "b53fedbc6101484c",
         "name": "go to tab1",
         "events": "all",
-        "x": 1190,
-        "y": 860,
+        "x": 1200,
+        "y": 920,
         "wires": [
             []
         ]
@@ -1531,7 +3214,7 @@
         "name": "Buttons on tab5",
         "info": "",
         "x": 1080,
-        "y": 820,
+        "y": 880,
         "wires": []
     },
     {
@@ -1546,7 +3229,7 @@
         "finalize": "",
         "libs": [],
         "x": 330,
-        "y": 1300,
+        "y": 1340,
         "wires": [
             [
                 "c24144606dc7a1f3"
@@ -1561,7 +3244,7 @@
         "name": "Ca sĩ khách mời",
         "order": 4,
         "width": 11,
-        "height": 11,
+        "height": 12,
         "format": "<img src=\"{{msg.payload}}\"></img>",
         "storeOutMessages": true,
         "fwdInMessages": true,
@@ -1569,7 +3252,7 @@
         "templateScope": "local",
         "className": "",
         "x": 520,
-        "y": 1300,
+        "y": 1340,
         "wires": [
             []
         ]
@@ -1581,7 +3264,7 @@
         "name": "Độ ẩm bể bơi và sân bóng",
         "info": "",
         "x": 130,
-        "y": 400,
+        "y": 580,
         "wires": []
     },
     {
@@ -1591,7 +3274,7 @@
         "name": "Áp suất bể bơi và sân bóng",
         "info": "",
         "x": 140,
-        "y": 640,
+        "y": 760,
         "wires": []
     },
     {
@@ -1601,7 +3284,7 @@
         "name": "Nhiệt độ bể bơi và sân bóng",
         "info": "",
         "x": 140,
-        "y": 840,
+        "y": 920,
         "wires": []
     },
     {
@@ -1615,965 +3298,2233 @@
         "wires": []
     },
     {
-        "id": "c776d5dc.13cb9",
+        "id": "edb930f96a8a01c5",
+        "type": "function",
+        "z": "8c5b202179f3c92c",
+        "name": "function 29",
+        "func": "const { payload } = msg;\nconst keys = Object.keys(payload);\nreturn {\n    payload: payload[keys[8]],\n};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 300,
+        "wires": [
+            [
+                "5ed66d7e9bd8c386"
+            ]
+        ]
+    },
+    {
+        "id": "5ed66d7e9bd8c386",
         "type": "ui_template",
         "z": "8c5b202179f3c92c",
-        "group": "17687767200cd07f",
-        "name": "Clock Toolbar",
-        "order": 4,
-        "width": "0",
-        "height": "0",
-        "format": "<script id=\"titleScript\" type=\"text/javascript\">\n    $('#clock').remove();\n    var toolbar = $('.md-toolbar-tools');\n    var div = $('<div/>');\n    var p = $('<p/ id=\"clock\">');\n    \n    $('#titleScript').parent().hide();\n    div.append(p);\n    div[0].style.margin = '5px 5px 5px auto';\n    toolbar.append(div);\n\n    function displayTitle(lh) {\n        p.text(lh); \n    }\n    \n    function upTime() {\n        var d = new Date();\n        p.text(d.toLocaleTimeString('de-AT'));\n    }\n\n    \n\n    // Watch the payload and update the title\n    (function(scope) {\n        scope.$watch('msg.payload', function(data) {\n            displayTitle(data);\n        });\n        setInterval(upTime,1000);\n    })(scope);\n</script>",
-        "storeOutMessages": false,
-        "fwdInMessages": false,
-        "resendOnRefresh": false,
+        "group": "963d0f03ab1d7be9",
+        "name": "Menu Bar",
+        "order": 1,
+        "width": 22,
+        "height": 6,
+        "format": "<img src=\"{{msg.payload}}\"></img>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 960,
-        "y": 1020,
+        "x": 500,
+        "y": 300,
         "wires": [
             []
         ]
     },
     {
-        "id": "a94d527c8b6c5001",
+        "id": "22ae23af6d6de4df",
+        "type": "function",
+        "z": "8c5b202179f3c92c",
+        "name": "function 30",
+        "func": "const { payload } = msg;\nconst keys = Object.keys(payload);\nreturn {\n    payload: payload[keys[9]],\n};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 340,
+        "wires": [
+            [
+                "26c5cd788badf142"
+            ]
+        ]
+    },
+    {
+        "id": "26c5cd788badf142",
+        "type": "ui_template",
+        "z": "8c5b202179f3c92c",
+        "group": "c4541dbf1158d78e",
+        "name": "Menu BBQ",
+        "order": 1,
+        "width": 28,
+        "height": 6,
+        "format": "<img src=\"{{msg.payload}}\"></img>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 510,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5670def7ac1f5c5d",
+        "type": "function",
+        "z": "8c5b202179f3c92c",
+        "name": "function 31",
+        "func": "const { payload } = msg;\nconst keys = Object.keys(payload);\nreturn {\n    payload: payload[keys[11]],\n};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 380,
+        "wires": [
+            [
+                "12d12f6839d76216"
+            ]
+        ]
+    },
+    {
+        "id": "12d12f6839d76216",
+        "type": "ui_template",
+        "z": "8c5b202179f3c92c",
+        "group": "dc3c4d0ea886df16",
+        "name": "Phòng gym D'capitale",
+        "order": 1,
+        "width": 7,
+        "height": 4,
+        "format": "<img src=\"{{msg.payload}}\"></img>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 540,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d00fbb3b3c47a43f",
+        "type": "function",
+        "z": "8c5b202179f3c92c",
+        "name": "function 32",
+        "func": "const { payload } = msg;\nconst keys = Object.keys(payload);\nreturn {\n    payload: payload[keys[10]],\n};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 420,
+        "wires": [
+            [
+                "7511541a72d3b9db"
+            ]
+        ]
+    },
+    {
+        "id": "7511541a72d3b9db",
+        "type": "ui_template",
+        "z": "8c5b202179f3c92c",
+        "group": "e38cfdec491e07cd",
+        "name": "Sân bóng đá",
+        "order": 1,
+        "width": 7,
+        "height": 4,
+        "format": "<img src=\"{{msg.payload}}\"></img>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 510,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0b96ac80917a7878",
+        "type": "function",
+        "z": "8c5b202179f3c92c",
+        "name": "function 33",
+        "func": "const { payload } = msg;\nconst keys = Object.keys(payload);\nreturn {\n    payload: payload[keys[12]],\n};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 460,
+        "wires": [
+            [
+                "c1df7e08ee98a277"
+            ]
+        ]
+    },
+    {
+        "id": "c1df7e08ee98a277",
+        "type": "ui_template",
+        "z": "8c5b202179f3c92c",
+        "group": "5b4ac65b1046c058",
+        "name": "Sân chơi trẻ em",
+        "order": 1,
+        "width": 7,
+        "height": 4,
+        "format": "<img src=\"{{msg.payload}}\"></img>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 520,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8c2d43af45faae6b",
+        "type": "ui_button",
+        "z": "8c5b202179f3c92c",
+        "g": "faee3982a2309356",
+        "name": "Đến phòng gym",
+        "group": "dc3c4d0ea886df16",
+        "order": 2,
+        "width": 7,
+        "height": 1,
+        "passthru": false,
+        "label": "Đến phòng gym",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\":\"Phòng gym\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 980,
+        "y": 340,
+        "wires": [
+            [
+                "5aceeb9c429f7667"
+            ]
+        ]
+    },
+    {
+        "id": "5aceeb9c429f7667",
+        "type": "ui_ui_control",
+        "z": "8c5b202179f3c92c",
+        "g": "faee3982a2309356",
+        "name": "go to tab8",
+        "events": "all",
+        "x": 1180,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b23592a035569ea9",
+        "type": "ui_button",
+        "z": "8c5b202179f3c92c",
+        "g": "faee3982a2309356",
+        "name": "Đến sân bóng đá",
+        "group": "e38cfdec491e07cd",
+        "order": 2,
+        "width": 7,
+        "height": 1,
+        "passthru": false,
+        "label": "Đến sân bóng đá",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\":\"Sân bóng đá\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 990,
+        "y": 380,
+        "wires": [
+            [
+                "32383481b2491f51"
+            ]
+        ]
+    },
+    {
+        "id": "32383481b2491f51",
+        "type": "ui_ui_control",
+        "z": "8c5b202179f3c92c",
+        "g": "faee3982a2309356",
+        "name": "go to tab9",
+        "events": "all",
+        "x": 1180,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b372dd3c5e379133",
+        "type": "ui_button",
+        "z": "8c5b202179f3c92c",
+        "g": "faee3982a2309356",
+        "name": "Đến khu vui chơi",
+        "group": "5b4ac65b1046c058",
+        "order": 2,
+        "width": 7,
+        "height": 1,
+        "passthru": false,
+        "label": "Đến khu vui chơi",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\":\"Khu vui chơi\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 990,
+        "y": 420,
+        "wires": [
+            [
+                "5963f6f1eff3301c"
+            ]
+        ]
+    },
+    {
+        "id": "5963f6f1eff3301c",
+        "type": "ui_ui_control",
+        "z": "8c5b202179f3c92c",
+        "name": "go to tab10",
+        "events": "all",
+        "x": 1190,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0f1787cf9953329c",
+        "type": "ui_button",
+        "z": "8c5b202179f3c92c",
+        "g": "faee3982a2309356",
+        "name": "Đến quán cafe",
+        "group": "93571fe10f410659",
+        "order": 2,
+        "width": 7,
+        "height": 1,
+        "passthru": false,
+        "label": "Đến quán cafe",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\":\"Quán cafe\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 980,
+        "y": 460,
+        "wires": [
+            [
+                "d36153714fe21163"
+            ]
+        ]
+    },
+    {
+        "id": "d36153714fe21163",
+        "type": "ui_ui_control",
+        "z": "8c5b202179f3c92c",
+        "g": "faee3982a2309356",
+        "name": "go to tab11",
+        "events": "all",
+        "x": 1190,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b803200851697700",
+        "type": "function",
+        "z": "8c5b202179f3c92c",
+        "name": "function 34",
+        "func": "const { payload } = msg;\nconst keys = Object.keys(payload);\nreturn {\n    payload: payload[keys[13]],\n};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 500,
+        "wires": [
+            [
+                "9af41b1b48ce7796"
+            ]
+        ]
+    },
+    {
+        "id": "9af41b1b48ce7796",
+        "type": "ui_template",
+        "z": "8c5b202179f3c92c",
+        "group": "93571fe10f410659",
+        "name": "Quán cafe",
+        "order": 1,
+        "width": 7,
+        "height": 4,
+        "format": "<img src=\"{{msg.payload}}\"></img>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 510,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b9c011cdd9c213bd",
+        "type": "ui_template",
+        "z": "8c5b202179f3c92c",
+        "group": "281d349dbc6864de",
+        "name": "Logo",
+        "order": 3,
+        "width": 18,
+        "height": 11,
+        "format": "<img src=\"{{msg.payload}}\"></img>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 490,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cad90f4ede0b44bc",
+        "type": "function",
+        "z": "8c5b202179f3c92c",
+        "name": "function 35",
+        "func": "const { payload } = msg;\nconst keys = Object.keys(payload);\nreturn {\n    payload: payload[keys[14]],\n};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 540,
+        "wires": [
+            [
+                "b9c011cdd9c213bd"
+            ]
+        ]
+    },
+    {
+        "id": "a96466e82e03b3d9",
         "type": "comment",
         "z": "8c5b202179f3c92c",
-        "name": "Thời gian thực",
+        "name": "Ảnh giới thiệu ở trang chủ",
         "info": "",
-        "x": 960,
-        "y": 980,
+        "x": 130,
+        "y": 20,
         "wires": []
     },
     {
-        "id": "c5f5482df3fe6fe3",
-        "type": "ui_spacer",
+        "id": "b696fd6401f72cd8",
+        "type": "ui_template",
         "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "3d1d649b5bc69b02",
+        "group": "339d0edc.4ffe02",
+        "name": "Node-Red Dashboard Custom CSS",
         "order": 1,
-        "width": 4,
-        "height": 1
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n//selectors: tag, ID, class\n\n//tag\nbody {\n    font-family: 'Josefin Sans', sans-serif !important;\n}\n// ID\n#Sân_bóng_rổ_Mật_độ_chiếm_dụng_và_chất_lượng_không_khí,\n#Bể_bơi_Mật_độ_chiếm_dụng_và_chất_lượng_không_khí {\n    border: none !important;\n}\n\n.md-button {\n    text-transform: capitalize !important;\n}\n\n.md-button:hover {\n    background-color: #333 !important;\n}    \n\n.nr-dashboard-cardtitle {\n    // đậm\n    font-weight: bold !important;\n    // giữa\n    text-align: center !important;\n}\n\n.nr-dashboard-theme ui-card-panel {\n// viền group\n    border-radius: 5px !important;\n}\n\n.button-facebook button:hover,\n.button-insta button:hover {\n    background-color: #ededed !important;\n}\n\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "global",
+        "className": "",
+        "x": 980,
+        "y": 1300,
+        "wires": [
+            []
+        ]
     },
     {
-        "id": "d3003665d237e04a",
-        "type": "ui_spacer",
+        "id": "29e65266a9c1aa65",
+        "type": "ui_button",
         "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "3d1d649b5bc69b02",
-        "order": 3,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "01eb8b132b387cdc",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "3d1d649b5bc69b02",
+        "g": "faee3982a2309356",
+        "name": " Đăng nhập nhân viên",
+        "group": "17687767200cd07f",
         "order": 4,
-        "width": 4,
-        "height": 1
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Khu đăng nhập dành cho nhân viên",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\":\"Khu vực đăng nhập dành cho nhân viên\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1000,
+        "y": 500,
+        "wires": [
+            [
+                "f4dba45f33d7ca8e"
+            ]
+        ]
     },
     {
-        "id": "d8602a278f6450d4",
-        "type": "ui_spacer",
+        "id": "f4dba45f33d7ca8e",
+        "type": "ui_ui_control",
         "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "3d1d649b5bc69b02",
-        "order": 5,
-        "width": 4,
-        "height": 1
+        "g": "faee3982a2309356",
+        "name": "go to tab11",
+        "events": "all",
+        "x": 1190,
+        "y": 500,
+        "wires": [
+            []
+        ]
     },
     {
-        "id": "31af878b42d5c0af",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "3d1d649b5bc69b02",
+        "id": "06cf8234086a4f80",
+        "type": "e-mail",
+        "z": "6f36066174de341a",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "secure": true,
+        "tls": true,
+        "name": "quannm293@gmail.com",
+        "dname": "",
+        "x": 610,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "40ce1df83e6556bd",
+        "type": "ui_template",
+        "z": "6f36066174de341a",
+        "group": "d574ef2773b6da92",
+        "name": "image3",
+        "order": 1,
+        "width": 15,
+        "height": 9,
+        "format": "<img src=\"{{msg.payload}}\"></img>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 530,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "856954e9b7d14e29",
+        "type": "firebase.on",
+        "z": "6f36066174de341a",
+        "name": "",
+        "firebaseconfig": "ceeb156878ada95a",
+        "childpath": "/Image URL Storage/gopy",
+        "atStart": true,
+        "eventType": "value",
+        "queries": [],
+        "x": 370,
+        "y": 80,
+        "wires": [
+            [
+                "40ce1df83e6556bd"
+            ]
+        ]
+    },
+    {
+        "id": "25a478fc080f9a61",
+        "type": "ui_text_input",
+        "z": "6f36066174de341a",
+        "name": "",
+        "label": "Thư góp ý gửi tới Ban quản lý",
+        "tooltip": "",
+        "group": "d574ef2773b6da92",
         "order": 6,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "0ff0baf942394b28",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "3d1d649b5bc69b02",
-        "order": 7,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "e0ef25eb4337ad24",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "3d1d649b5bc69b02",
-        "order": 8,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "a156c04650a0e433",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "3d1d649b5bc69b02",
-        "order": 9,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "e2f643f5dd76da78",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "3d1d649b5bc69b02",
-        "order": 10,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "3d54e431fd321180",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "3d1d649b5bc69b02",
-        "order": 11,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "c828726b984a418f",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "3d1d649b5bc69b02",
-        "order": 12,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "9681a5639384c7c8",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "3d1d649b5bc69b02",
-        "order": 13,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "a44b79a361dcf392",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "3d1d649b5bc69b02",
-        "order": 14,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "30b1fad56d419c1f",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "3d1d649b5bc69b02",
-        "order": 15,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "c688ee6c6f303ef8",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "3d1d649b5bc69b02",
-        "order": 16,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "9df37231fe4d3b9b",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "3d1d649b5bc69b02",
-        "order": 17,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "69a03ff7ca638424",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "3d1d649b5bc69b02",
-        "order": 18,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "e6cccf08840a5bd0",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "3d1d649b5bc69b02",
-        "order": 19,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "2872dc93f7d512d6",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "3d1d649b5bc69b02",
-        "order": 20,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "a62365fc2bfd2815",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "3d1d649b5bc69b02",
-        "order": 21,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "8607c7df31dd2d72",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "3d1d649b5bc69b02",
-        "order": 22,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "456945d26842c388",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "3d1d649b5bc69b02",
-        "order": 23,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "e380b59597b59405",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "3d1d649b5bc69b02",
-        "order": 24,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "37f1d5669d042d34",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "3d1d649b5bc69b02",
-        "order": 25,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "6417507c48031c01",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "cb7c8aaaccb0c240",
-        "order": 1,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "8f4281f318e373f1",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "cb7c8aaaccb0c240",
-        "order": 3,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "a17372892f1b8a75",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "cb7c8aaaccb0c240",
-        "order": 5,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "c8588d0952f5bd53",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "cb7c8aaaccb0c240",
-        "order": 6,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "c5dba879addb95c2",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "cb7c8aaaccb0c240",
-        "order": 8,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "926379448bd3d125",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "cb7c8aaaccb0c240",
-        "order": 10,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "457a38ea12c77c86",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "cb7c8aaaccb0c240",
-        "order": 11,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "5ebc72bdb465a6f8",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "cb7c8aaaccb0c240",
-        "order": 12,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "1562f723babe4b3e",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "cb7c8aaaccb0c240",
-        "order": 13,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "c2628c2954f4d5c1",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "7d7bc6b754fd872b",
-        "order": 1,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "fe2872bd524a89cb",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "7d7bc6b754fd872b",
-        "order": 3,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "d8ecdcf5a4e62d65",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "7d7bc6b754fd872b",
-        "order": 4,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "96013a16c8a313fb",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "7d7bc6b754fd872b",
-        "order": 6,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "088e5fb518650af4",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "1541b6da94f4272a",
-        "order": 1,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "934d12148a8e6244",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "1541b6da94f4272a",
-        "order": 3,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "13ddc17bae1e7fd1",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "1541b6da94f4272a",
-        "order": 4,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "f031f83577e3bdc2",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "1541b6da94f4272a",
-        "order": 5,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "3432afc60722c594",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "1541b6da94f4272a",
-        "order": 6,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "6eaa58468a6e0d78",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "1541b6da94f4272a",
-        "order": 7,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "adda044c23c0a309",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "1541b6da94f4272a",
-        "order": 8,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "89b0b9ab309c7a54",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "1541b6da94f4272a",
-        "order": 9,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "d80c02812c793607",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "1541b6da94f4272a",
-        "order": 10,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "a84790f67aa64096",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "1541b6da94f4272a",
-        "order": 11,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "6f5c86610ec8af2c",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "1541b6da94f4272a",
-        "order": 12,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "2e68799ede37ba9e",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "1541b6da94f4272a",
-        "order": 13,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "90d1401d404f9ff2",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "1541b6da94f4272a",
-        "order": 14,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "ddbe59aa40c0fcdb",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "1541b6da94f4272a",
-        "order": 15,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "22c3f0ef4c3442a4",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "1541b6da94f4272a",
-        "order": 16,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "29ad5e9a52c0bb4a",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "1541b6da94f4272a",
-        "order": 17,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "eaa39b156d607d12",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "1541b6da94f4272a",
-        "order": 18,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "9d6bc5458c5adbc1",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "1541b6da94f4272a",
-        "order": 19,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "405ceb474fe0f700",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "1541b6da94f4272a",
-        "order": 20,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "8c64cbdb4a3d1d08",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "1541b6da94f4272a",
-        "order": 21,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "5eb6b38c569d398f",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "1541b6da94f4272a",
-        "order": 22,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "8b513fdc2fe9da73",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "1541b6da94f4272a",
-        "order": 23,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "9488d491c736010b",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "1541b6da94f4272a",
-        "order": 24,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "c348978c38a725b4",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "1541b6da94f4272a",
-        "order": 25,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "7de552fca3ebdde8",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "6e6a8cd2cfac115c",
-        "order": 1,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "ed9382184dbd4f41",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "6e6a8cd2cfac115c",
-        "order": 3,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "3061f62bf82b6538",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "6e6a8cd2cfac115c",
-        "order": 5,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "033c622d3ffca83b",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "6e6a8cd2cfac115c",
-        "order": 6,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "aa1342a77204e12f",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "6e6a8cd2cfac115c",
-        "order": 8,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "082a8c17aacd5835",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "6e6a8cd2cfac115c",
-        "order": 10,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "66eeabc8a13c25c9",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "6e6a8cd2cfac115c",
-        "order": 11,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "60ac6befff98f281",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "6e6a8cd2cfac115c",
-        "order": 12,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "d49e84bc496bd3dc",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "6e6a8cd2cfac115c",
-        "order": 13,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "6ec42272c7128613",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "1cd9e7408925ae69",
-        "order": 1,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "9e454918903e3bc3",
-        "type": "ui_spacer",
-        "z": "8c5b202179f3c92c",
-        "name": "spacer",
-        "group": "1cd9e7408925ae69",
-        "order": 3,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "b25701a9d70f9a45",
-        "type": "ui_group",
-        "name": "Sân bóng rổ D'capitale",
-        "tab": "51510d448230ee7b",
-        "order": 3,
-        "disp": true,
-        "width": 7,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "57c0fa20410bbe40",
-        "type": "ui_group",
-        "name": "                        Bể bơi D'capitale",
-        "tab": "51510d448230ee7b",
-        "order": 2,
-        "disp": true,
-        "width": "7",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "17687767200cd07f",
-        "type": "ui_group",
-        "name": "Chọn khu vực bạn mong muốn để kiểm tra mật độ dân cư và chất lượng không khí",
-        "tab": "51510d448230ee7b",
-        "order": 1,
-        "disp": true,
-        "width": 28,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "7d7bc6b754fd872b",
-        "type": "ui_group",
-        "name": "Lời khuyên cho bể bơi",
-        "tab": "6fd705cd22cae4d2",
-        "order": 3,
-        "disp": true,
-        "width": 14,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "1cd9e7408925ae69",
-        "type": "ui_group",
-        "name": "Lời khuyên cho bóng rổ",
-        "tab": "d8a928af18a73bbb",
-        "order": 3,
-        "disp": true,
-        "width": 14,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "3d1d649b5bc69b02",
-        "type": "ui_group",
-        "name": "Mật độ chiếm dụng và chất lượng không khí",
-        "tab": "6fd705cd22cae4d2",
-        "order": 1,
-        "disp": true,
-        "width": 28,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "cb7c8aaaccb0c240",
-        "type": "ui_group",
-        "name": "Data bể bơi",
-        "tab": "6fd705cd22cae4d2",
-        "order": 2,
-        "disp": true,
-        "width": 14,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "6e6a8cd2cfac115c",
-        "type": "ui_group",
-        "name": "Data bóng rổ",
-        "tab": "d8a928af18a73bbb",
-        "order": 2,
-        "disp": true,
-        "width": 14,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "1541b6da94f4272a",
-        "type": "ui_group",
-        "name": "Mật độ chiếm dụng và chất lượng không khí",
-        "tab": "d8a928af18a73bbb",
-        "order": 1,
-        "disp": true,
-        "width": 28,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "1a9014623af360d4",
-        "type": "ui_group",
-        "name": "Tiệc BBQ",
-        "tab": "51510d448230ee7b",
-        "order": 4,
-        "disp": true,
-        "width": "7",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "e7667c46d87a7393",
-        "type": "ui_group",
-        "name": "Quầy bar ngoài trời",
-        "tab": "51510d448230ee7b",
-        "order": 5,
-        "disp": true,
-        "width": "7",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "69191d7a3d759cfb",
-        "type": "ui_group",
-        "name": "Mật độ chiếm dụng và chất lượng không khí",
-        "tab": "c5751d3f39192f9f",
-        "order": 1,
-        "disp": true,
-        "width": 19,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "2db507a2eb558669",
-        "type": "ui_group",
-        "name": "Thông tin chiếm dụng",
-        "tab": "8526696a48c3d104",
-        "order": 1,
-        "disp": true,
-        "width": "11",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "d48330ddf2163e4d",
-        "type": "ui_group",
-        "name": "Quán bar ngoài trời D'capitale",
-        "tab": "8526696a48c3d104",
-        "order": 2,
-        "disp": true,
-        "width": "22",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "1a00ea9c591f0a2b",
-        "type": "ui_group",
-        "name": "Ca sĩ khách mời hôm nay: MONO (20:00)",
-        "tab": "8526696a48c3d104",
-        "order": 4,
-        "disp": true,
         "width": 11,
-        "collapse": false,
-        "className": ""
+        "height": 1,
+        "passthru": false,
+        "mode": "text",
+        "delay": 300,
+        "topic": "Thư góp ý từ khách hàng",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 330,
+        "y": 200,
+        "wires": [
+            [
+                "7b63c686a56bb829",
+                "8fbda32409b02d69",
+                "06cf8234086a4f80",
+                "8bb544167ac8e48a"
+            ]
+        ],
+        "info": "Góp ý"
     },
     {
-        "id": "51510d448230ee7b",
-        "type": "ui_tab",
-        "name": "WELCOME TO D'CAPITALE",
-        "icon": "dashboard",
-        "order": 1,
-        "disabled": false,
-        "hidden": false,
-        "info": "**WELCOME TO D'CAPITALE**"
+        "id": "00b9345461649f78",
+        "type": "ui_button",
+        "z": "6f36066174de341a",
+        "g": "577b62c6e4156cb4",
+        "name": "Về trang chủ",
+        "group": "d574ef2773b6da92",
+        "order": 8,
+        "width": 11,
+        "height": 1,
+        "passthru": false,
+        "label": "Về trang chủ",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\":\"WELCOME TO D'CAPITALE\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 930,
+        "y": 120,
+        "wires": [
+            [
+                "27d943e5acf95c85"
+            ]
+        ]
     },
     {
-        "id": "6fd705cd22cae4d2",
-        "type": "ui_tab",
-        "name": "Bể bơi",
-        "icon": "dashboard",
-        "order": 2,
-        "disabled": false,
-        "hidden": false
+        "id": "27d943e5acf95c85",
+        "type": "ui_ui_control",
+        "z": "6f36066174de341a",
+        "g": "577b62c6e4156cb4",
+        "name": "go to tab1",
+        "events": "all",
+        "x": 1150,
+        "y": 120,
+        "wires": [
+            []
+        ]
     },
     {
-        "id": "d8a928af18a73bbb",
-        "type": "ui_tab",
-        "name": "Sân bóng rổ",
-        "icon": "dashboard",
-        "order": 3,
-        "disabled": false,
-        "hidden": false
+        "id": "3ccc337bbaf7f9b4",
+        "type": "comment",
+        "z": "6f36066174de341a",
+        "g": "577b62c6e4156cb4",
+        "name": "Buttons on tab4",
+        "info": "",
+        "x": 1040,
+        "y": 80,
+        "wires": []
     },
     {
-        "id": "c5751d3f39192f9f",
-        "type": "ui_tab",
-        "name": "Tiệc BBQ",
-        "icon": "dashboard",
-        "order": 6,
-        "disabled": false,
-        "hidden": false
+        "id": "8fbda32409b02d69",
+        "type": "e-mail",
+        "z": "6f36066174de341a",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "secure": true,
+        "tls": true,
+        "name": "duchoangnguyen2404@gmail.com",
+        "dname": "",
+        "x": 640,
+        "y": 260,
+        "wires": []
     },
     {
-        "id": "8526696a48c3d104",
-        "type": "ui_tab",
-        "name": "Bar",
-        "icon": "dashboard",
+        "id": "7b63c686a56bb829",
+        "type": "e-mail",
+        "z": "6f36066174de341a",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "secure": true,
+        "tls": true,
+        "name": "nguyenhonghanh0819@gmail.com",
+        "dname": "",
+        "x": 640,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "2b2d17cbdcd2372f",
+        "type": "ui_button",
+        "z": "6f36066174de341a",
+        "name": "",
+        "group": "d574ef2773b6da92",
         "order": 7,
-        "disabled": false,
-        "hidden": false
+        "width": 11,
+        "height": 2,
+        "passthru": true,
+        "label": "GỬI",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "Đã gửi!",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 200,
+        "wires": [
+            [
+                "25a478fc080f9a61"
+            ]
+        ]
+    },
+    {
+        "id": "8777eb83d198521c",
+        "type": "comment",
+        "z": "6f36066174de341a",
+        "name": "Hòm thư góp ý",
+        "info": "****",
+        "x": 140,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "a43f6fbef723bfe3",
+        "type": "ui_toast",
+        "z": "6f36066174de341a",
+        "position": "top right",
+        "displayTime": "5",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Gửi thư thành công!",
+        "name": "",
+        "x": 790,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "8bb544167ac8e48a",
+        "type": "change",
+        "z": "6f36066174de341a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Gửi thư thành công!",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 380,
+        "wires": [
+            [
+                "a43f6fbef723bfe3"
+            ]
+        ]
+    },
+    {
+        "id": "92e8b80ab33edf4c",
+        "type": "ui_text",
+        "z": "5f56bf548348cf42",
+        "group": "a07370bb14ee1bca",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Số điện thoại: 0961266396",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 240,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "7c065d8598a9c175",
+        "type": "ui_template",
+        "z": "5f56bf548348cf42",
+        "group": "a07370bb14ee1bca",
+        "name": "SP",
+        "order": 1,
+        "width": 12,
+        "height": 7,
+        "format": "<img src=\"{{msg.payload}}\"></img>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 480,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7caa0ad3e13ac1ad",
+        "type": "firebase.on",
+        "z": "5f56bf548348cf42",
+        "name": "",
+        "firebaseconfig": "ceeb156878ada95a",
+        "childpath": "/Image URL Storage/sp",
+        "atStart": true,
+        "eventType": "value",
+        "queries": [],
+        "x": 320,
+        "y": 40,
+        "wires": [
+            [
+                "7c065d8598a9c175"
+            ]
+        ]
+    },
+    {
+        "id": "3ae2f38da99f93a7",
+        "type": "ui_button",
+        "z": "5f56bf548348cf42",
+        "g": "5dd4df7fed529d8e",
+        "name": "Về trang chủ",
+        "group": "a07370bb14ee1bca",
+        "order": 13,
+        "width": 18,
+        "height": 1,
+        "passthru": false,
+        "label": "Về trang chủ",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\":\"WELCOME TO D'CAPITALE\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 230,
+        "y": 300,
+        "wires": [
+            [
+                "1eb5d4584f19354a"
+            ]
+        ]
+    },
+    {
+        "id": "1eb5d4584f19354a",
+        "type": "ui_ui_control",
+        "z": "5f56bf548348cf42",
+        "g": "5dd4df7fed529d8e",
+        "name": "go to tab1",
+        "events": "all",
+        "x": 450,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ea1c9e2a3e28618b",
+        "type": "comment",
+        "z": "5f56bf548348cf42",
+        "g": "5dd4df7fed529d8e",
+        "name": "Buttons on tab5",
+        "info": "",
+        "x": 340,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "85c3224ef3c1a368",
+        "type": "ui_text",
+        "z": "5f56bf548348cf42",
+        "group": "a07370bb14ee1bca",
+        "order": 4,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Email: 5code0406@gmail.com",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 530,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "1a1188dee848ac80",
+        "type": "ui_button",
+        "z": "5f56bf548348cf42",
+        "name": "",
+        "group": "a07370bb14ee1bca",
+        "order": 7,
+        "width": 1,
+        "height": 1,
+        "passthru": false,
+        "label": "",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "#fff",
+        "className": "button-facebook",
+        "icon": "https://cdn-icons-png.flaticon.com/512/2504/2504903.png",
+        "payload": "Facebook",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 130,
+        "y": 420,
+        "wires": [
+            [
+                "7d5abf8ec929f18a"
+            ]
+        ]
+    },
+    {
+        "id": "3477dea1cd581837",
+        "type": "ui_template",
+        "z": "5f56bf548348cf42",
+        "group": "a07370bb14ee1bca",
+        "name": "window redirect",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "format": "<script>\n(function(scope) {\n    scope.$watch('msg.payload', function(data) {\n        if (data == \"Facebook\") {\n          //window.open(\"https://www.nodered.org\");\n          window.location.href = \"https://www.facebook.com\";\n        } \n        if (data == \"Instagram\") {\n          //window.open(\"https://github.com/node-red\");\n          window.location.href = \"https://www.instagram.com\";\n        } \n    });\n})(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 540,
+        "y": 440,
+        "wires": [
+            [
+                "84a8face1a9d35b2"
+            ]
+        ]
+    },
+    {
+        "id": "3b2fd609ea18a3ee",
+        "type": "ui_button",
+        "z": "5f56bf548348cf42",
+        "name": "",
+        "group": "a07370bb14ee1bca",
+        "order": 8,
+        "width": 1,
+        "height": 1,
+        "passthru": false,
+        "label": "",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "#fff",
+        "className": "button-insta",
+        "icon": "https://cdn-icons-png.flaticon.com/512/2111/2111463.png",
+        "payload": "Instagram",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 150,
+        "y": 460,
+        "wires": [
+            [
+                "7d5abf8ec929f18a"
+            ]
+        ]
+    },
+    {
+        "id": "7d5abf8ec929f18a",
+        "type": "trigger",
+        "z": "5f56bf548348cf42",
+        "name": "reset msg",
+        "op1": "",
+        "op2": "empty",
+        "op1type": "pay",
+        "op2type": "str",
+        "duration": "250",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 360,
+        "y": 440,
+        "wires": [
+            [
+                "3477dea1cd581837"
+            ]
+        ]
+    },
+    {
+        "id": "84a8face1a9d35b2",
+        "type": "debug",
+        "z": "5f56bf548348cf42",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "75be3da937b5c5a0",
+        "type": "debug",
+        "z": "e4586447e878f6e6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 810,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "132366eec0386fc4",
+        "type": "function",
+        "z": "e4586447e878f6e6",
+        "name": "Trigger Alarm 1",
+        "func": "var payload1 = msg.payload1;\nvar alarm_flag1 = context.get(\"alarm_flag1\");\nif (typeof alarm_flag1 == \"undefined\")\n    alarm_flag1 = false;\n\nif (payload1 > 20 && !alarm_flag1) {\n    alarm_flag1 = true;\n    msg.alarm1 = 1;\n    context.set(\"alarm_flag1\", alarm_flag1);\n    return msg;\n}\nif (payload1 <= 20 && alarm_flag1) {\n    alarm_flag1 = false;\n    msg.alarm1 = 0;\n    context.set(\"alarm_flag1\", alarm_flag1);\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 140,
+        "wires": [
+            [
+                "2b968b7ad3e3c09e"
+            ]
+        ]
+    },
+    {
+        "id": "2b968b7ad3e3c09e",
+        "type": "function",
+        "z": "e4586447e878f6e6",
+        "name": "Lời khuyên dựa trên nhiệt độ",
+        "func": "var temp1 = msg.payload;\nvar message = \"\";\nif (msg.alarm1) {\n    msg.topic = \" 😎 Nhiệt độ cao, bạn hãy nhớ bôi kem chống nắng!\";\n    message = \" High Temperature Alarm temp= \";\n}\nelse {\n    message = \" Temperature now normal temp= \";\n    msg.topic = \" 🥰 Hôm nay trời đẹp, hãy xuống sân vận động thôi nào!\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 200,
+        "wires": [
+            [
+                "75be3da937b5c5a0",
+                "82593b7b8ce3c012",
+                "f873102f52faf8a0"
+            ]
+        ]
+    },
+    {
+        "id": "e6b1add73db8d60d",
+        "type": "firebase.on",
+        "z": "e4586447e878f6e6",
+        "name": "",
+        "firebaseconfig": "ceeb156878ada95a",
+        "childpath": "/Services Data Storage/BME Data Storage/TempNoUnit",
+        "atStart": true,
+        "eventType": "value",
+        "queries": [],
+        "x": 430,
+        "y": 60,
+        "wires": [
+            [
+                "e74e518e9bf7572e"
+            ]
+        ]
+    },
+    {
+        "id": "82593b7b8ce3c012",
+        "type": "ui_template",
+        "z": "e4586447e878f6e6",
+        "group": "1cd9e7408925ae69",
+        "name": "Lời khuyên cho sân bóng",
+        "order": 2,
+        "width": 13,
+        "height": 2,
+        "format": "<div ng-bind-html=\"msg.topic\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 830,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e74e518e9bf7572e",
+        "type": "function",
+        "z": "e4586447e878f6e6",
+        "name": "function 20",
+        "func": "const { payload } = msg;\nconst keys = Object.keys(payload);\nreturn {\n    payload1: payload[keys[(keys.length - 1)]],\n};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 140,
+        "wires": [
+            [
+                "132366eec0386fc4"
+            ]
+        ]
+    },
+    {
+        "id": "f873102f52faf8a0",
+        "type": "ui_template",
+        "z": "e4586447e878f6e6",
+        "group": "7d7bc6b754fd872b",
+        "name": "Lời khuyên cho bể bơi",
+        "order": 2,
+        "width": 13,
+        "height": 2,
+        "format": "<div ng-bind-html=\"msg.topic\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 820,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f3a00915eceb3edb",
+        "type": "debug",
+        "z": "e4586447e878f6e6",
+        "name": "debug 13",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "b59a5c3a9741b6cc",
+        "type": "e-mail",
+        "z": "e4586447e878f6e6",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "secure": true,
+        "tls": true,
+        "name": "nguyenhonghanh0819@gmail.com",
+        "dname": "",
+        "x": 540,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "01afac7c485ebc47",
+        "type": "ui_form",
+        "z": "e4586447e878f6e6",
+        "name": "",
+        "label": "Đặt vé show ca sĩ khách mời",
+        "group": "1a00ea9c591f0a2b",
+        "order": 1,
+        "width": 11,
+        "height": 1,
+        "options": [
+            {
+                "label": "Căn hộ",
+                "value": "Căn hộ",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Số lượng vé",
+                "value": "number",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Căn hộ": "",
+            "number": ""
+        },
+        "payload": "",
+        "submit": "Đặt",
+        "cancel": "Hủy",
+        "topic": "",
+        "topicType": "str",
+        "splitLayout": "",
+        "className": "",
+        "x": 160,
+        "y": 900,
+        "wires": [
+            [
+                "23e50b09b651b86d",
+                "328458438d067732"
+            ]
+        ]
+    },
+    {
+        "id": "23e50b09b651b86d",
+        "type": "e-mail",
+        "z": "e4586447e878f6e6",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "secure": true,
+        "tls": true,
+        "name": "quannm293@gmail.com",
+        "dname": "",
+        "x": 510,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "0f658d3eac1bd42a",
+        "type": "debug",
+        "z": "e4586447e878f6e6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "0ca2287600c51030",
+        "type": "function",
+        "z": "e4586447e878f6e6",
+        "name": "Trigger Alarm 3",
+        "func": "var payload2=msg.payload2;\nvar alarm_flag2=context.get(\"alarm_flag2\");\nif(typeof alarm_flag2==\"undefined\")\nalarm_flag2=false;\n\nif (payload2>0 && !alarm_flag2)\n{\n    alarm_flag2=true;\n    msg.alarm2=1;\n    context.set(\"alarm_flag2\",alarm_flag2);\n    return msg;\n}\nif (payload2 == 0 && alarm_flag2)\n{\n    alarm_flag2=false;\n    msg.alarm2=0;\n    context.set(\"alarm_flag2\",alarm_flag2);\n    return msg;\n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 400,
+        "wires": [
+            [
+                "0f658d3eac1bd42a",
+                "0401b9334e699e09"
+            ]
+        ]
+    },
+    {
+        "id": "0401b9334e699e09",
+        "type": "function",
+        "z": "e4586447e878f6e6",
+        "name": "Tình trạng vé",
+        "func": "var temp = msg.payload;\nvar message = \"\";\nif (msg.alarm2) {\n    msg.topic = \" 🎵 Vẫn còn vé show ca sĩ MONO! Đặt ngay thôi nào!\";\n    message = \"  High Temperature Alarm temp= \";\n}\nelse {\n    message = \" Temperature now normal temp= \";\n    msg.topic = \" 😅 Rất tiếc, vé đã hết. Rất mong quý khách thông cảm!\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 480,
+        "wires": [
+            [
+                "0f658d3eac1bd42a",
+                "b1a694290e0a5c6b",
+                "2cdc190c69c4700b"
+            ]
+        ]
+    },
+    {
+        "id": "a3f11a99791b3bf5",
+        "type": "firebase.on",
+        "z": "e4586447e878f6e6",
+        "name": "",
+        "firebaseconfig": "ceeb156878ada95a",
+        "childpath": "/Services Data Storage/Extensions/Tickets",
+        "atStart": true,
+        "eventType": "value",
+        "queries": [],
+        "x": 390,
+        "y": 320,
+        "wires": [
+            [
+                "7e7ee320f9159770"
+            ]
+        ]
+    },
+    {
+        "id": "7e7ee320f9159770",
+        "type": "function",
+        "z": "e4586447e878f6e6",
+        "name": "function 28",
+        "func": "const { payload } = msg;\nconst keys = Object.keys(payload);\nreturn {\n    payload2: payload[keys[(keys.length-1)]],\n    payload: payload[keys[(keys.length - 1)]],\n};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 400,
+        "wires": [
+            [
+                "0ca2287600c51030",
+                "3867e141bdac6fbd"
+            ]
+        ]
+    },
+    {
+        "id": "2bd5c20e54182cb6",
+        "type": "comment",
+        "z": "e4586447e878f6e6",
+        "name": "Lời khuyên dựa trên nhiệt độ",
+        "info": "",
+        "x": 140,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "8774de36bd6a4543",
+        "type": "comment",
+        "z": "e4586447e878f6e6",
+        "name": "Lời khuyên dựa trên số vé show ca sĩ khách mời còn lại",
+        "info": "",
+        "x": 220,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "b1a694290e0a5c6b",
+        "type": "ui_toast",
+        "z": "e4586447e878f6e6",
+        "position": "dialog",
+        "displayTime": "10",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "Mua vé ngay!",
+        "cancel": "Bỏ qua",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 670,
+        "y": 480,
+        "wires": [
+            [
+                "2f7d04665f601c08",
+                "9fa26246b6e1f8e7"
+            ]
+        ]
+    },
+    {
+        "id": "3867e141bdac6fbd",
+        "type": "ui_text",
+        "z": "e4586447e878f6e6",
+        "group": "1a00ea9c591f0a2b",
+        "order": 2,
+        "width": 11,
+        "height": 1,
+        "name": "",
+        "label": "Số vé còn lại: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 260,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "697a4d194ae2f7ed",
+        "type": "ui_toast",
+        "z": "e4586447e878f6e6",
+        "position": "dialog",
+        "displayTime": "5",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Đặt lịch thành công!",
+        "name": "",
+        "x": 670,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "24ab812a50d6f306",
+        "type": "change",
+        "z": "e4586447e878f6e6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Đặt lịch thành công!",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 660,
+        "wires": [
+            [
+                "697a4d194ae2f7ed"
+            ]
+        ]
+    },
+    {
+        "id": "2cdc190c69c4700b",
+        "type": "ui_template",
+        "z": "e4586447e878f6e6",
+        "group": "1a00ea9c591f0a2b",
+        "name": "Thông báo hết vé",
+        "order": 3,
+        "width": 11,
+        "height": 1,
+        "format": "<div ng-bind-html=\"msg.topic\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 690,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1956772995088933",
+        "type": "ui_toast",
+        "z": "e4586447e878f6e6",
+        "position": "top right",
+        "displayTime": "10",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 670,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "328458438d067732",
+        "type": "change",
+        "z": "e4586447e878f6e6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Đặt vé thành công!",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 900,
+        "wires": [
+            [
+                "1956772995088933"
+            ]
+        ]
+    },
+    {
+        "id": "19910188eea5bccd",
+        "type": "comment",
+        "z": "e4586447e878f6e6",
+        "name": "Form đặt vé/ đặt chỗ",
+        "info": "",
+        "x": 130,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "2bfd51909d035369",
+        "type": "ui_form",
+        "z": "e4586447e878f6e6",
+        "name": "",
+        "label": "",
+        "group": "69191d7a3d759cfb",
+        "order": 1,
+        "width": 12,
+        "height": 7,
+        "options": [
+            {
+                "label": "Căn hộ",
+                "value": "Room",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Email",
+                "value": "Email",
+                "type": "email",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Số điện thoại",
+                "value": "PhoneNumber",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Số người",
+                "value": "Number",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Chọn ngày",
+                "value": "Date",
+                "type": "date",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Chọn giờ",
+                "value": "Time",
+                "type": "time",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Chú thích",
+                "value": "Note",
+                "type": "text",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Room": "",
+            "Email": "",
+            "PhoneNumber": "",
+            "Number": "",
+            "Date": "",
+            "Time": "",
+            "Note": ""
+        },
+        "payload": "",
+        "submit": "Gửi",
+        "cancel": "Hủy",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 90,
+        "y": 620,
+        "wires": [
+            [
+                "b59a5c3a9741b6cc",
+                "f3a00915eceb3edb",
+                "24ab812a50d6f306",
+                "5648fd3047795fc1",
+                "253c0633ebbcff95"
+            ]
+        ]
+    },
+    {
+        "id": "019574bafddb445c",
+        "type": "ui_table",
+        "z": "e4586447e878f6e6",
+        "group": "1a2eae6e1ad2d89b",
+        "name": "",
+        "order": 1,
+        "width": 28,
+        "height": 19,
+        "columns": [
+            {
+                "field": "room",
+                "title": "Căn hộ",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "phonenumber",
+                "title": "Số điện thoại",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "email",
+                "title": "Email",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "number",
+                "title": "Số người",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "date",
+                "title": "Ngày",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "time",
+                "title": "Giờ",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "note",
+                "title": "Ghi chú",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 730,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "5648fd3047795fc1",
+        "type": "function",
+        "z": "e4586447e878f6e6",
+        "name": "function 36",
+        "func": "tableData = flow.get(\"savedData\") || [];\nvar date = msg.payload.Date;\nvar time = msg.payload.Time;\nvar room = msg.payload.Room;\nvar number = msg.payload.Number;\nvar phonenumber = msg.payload.PhoneNumber;\nvar email =  msg.payload.Email;\nvar note = msg.payload.Note;\n\ntableData.unshift({\n        \"date\": date,\n        \"time\": time,\n        \"room\": room,\n        \"number\": number,\n        \"phonenumber\": phonenumber,\n        \"email\": email, \n        \"note\": note,\n    });\n    \nmsg.payload = tableData;\n\nflow.set(\"savedData\", tableData);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 4,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 720,
+        "wires": [
+            [
+                "019574bafddb445c"
+            ]
+        ]
+    },
+    {
+        "id": "906bcc736c7ef0fa",
+        "type": "change",
+        "z": "e4586447e878f6e6",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "savedData",
+                "pt": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 820,
+        "y": 780,
+        "wires": [
+            [
+                "5648fd3047795fc1"
+            ]
+        ]
+    },
+    {
+        "id": "099adc013b79f234",
+        "type": "ui_button",
+        "z": "e4586447e878f6e6",
+        "name": "",
+        "group": "1a2eae6e1ad2d89b",
+        "order": 3,
+        "width": 8,
+        "height": 1,
+        "passthru": false,
+        "label": "Xóa toàn bộ danh sách!",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 590,
+        "y": 780,
+        "wires": [
+            [
+                "906bcc736c7ef0fa"
+            ]
+        ]
+    },
+    {
+        "id": "2f7d04665f601c08",
+        "type": "function",
+        "z": "e4586447e878f6e6",
+        "name": "Tình trạng vé",
+        "func": "if (msg.payload == \"Mua vé ngay!\") {\n    msg.payload = { \"tab\": \"Bar\" };    \n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 440,
+        "wires": [
+            [
+                "cdabc62f2a1fa590"
+            ]
+        ]
+    },
+    {
+        "id": "cdabc62f2a1fa590",
+        "type": "ui_ui_control",
+        "z": "e4586447e878f6e6",
+        "name": "go to tab12",
+        "events": "all",
+        "x": 1030,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9fa26246b6e1f8e7",
+        "type": "debug",
+        "z": "e4586447e878f6e6",
+        "name": "debug 14",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "253c0633ebbcff95",
+        "type": "function",
+        "z": "e4586447e878f6e6",
+        "name": "function 37",
+        "func": "var date = msg.payload.Date.toString();\nvar time = msg.payload.Time.toString();\nvar room = msg.payload.Room.toString();\nvar number = msg.payload.Number.toString();\nvar phonenumber = msg.payload.PhoneNumber.toString();\nvar email = msg.payload.Email.toString();\n\n\nmsg.payload = \"Phòng: \" + room + \" \" + \"Email: \" + email + \" \" +\n    \"SDT: \" + phonenumber + \" \" + \"Số người: \" + number + \" \" + \"Ngày: \" + date + \" \" + \"Giờ\" + time;\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 800,
+        "wires": [
+            [
+                "b59a5c3a9741b6cc",
+                "23e50b09b651b86d"
+            ]
+        ]
+    },
+    {
+        "id": "bf8b8d34e46f474e",
+        "type": "ui_form",
+        "z": "759172df9e4316ca",
+        "name": "Form for entering data",
+        "label": "",
+        "group": "281d349dbc6864de",
+        "order": 1,
+        "width": 18,
+        "height": 1,
+        "options": [
+            {
+                "label": "Mã nhân viên",
+                "value": "User",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Mật khẩu",
+                "value": "Password",
+                "type": "password",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "User": "",
+            "Password": ""
+        },
+        "payload": "",
+        "submit": "OK",
+        "cancel": "Cancel",
+        "topic": "mi",
+        "topicType": "str",
+        "splitLayout": false,
+        "className": "",
+        "x": 240,
+        "y": 160,
+        "wires": [
+            [
+                "111e30d4454a1775",
+                "09b122b603a0d89f"
+            ]
+        ]
+    },
+    {
+        "id": "415af2c1e5158329",
+        "type": "ui_ui_control",
+        "z": "759172df9e4316ca",
+        "name": "",
+        "events": "change",
+        "x": 1120,
+        "y": 180,
+        "wires": [
+            [
+                "214067ebd95b5368"
+            ]
+        ]
+    },
+    {
+        "id": "9b3cc66a905c9cee",
+        "type": "ui_ui_control",
+        "z": "759172df9e4316ca",
+        "name": "",
+        "events": "all",
+        "x": 1160,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3cd734517626aa16",
+        "type": "join",
+        "z": "759172df9e4316ca",
+        "name": "Cho kết quả đúng với trạng thái đăng nhập gần nhất",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "",
+        "count": "1",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 460,
+        "y": 340,
+        "wires": [
+            [
+                "4f37b15b393a7e34",
+                "1599f83c1bd40a12"
+            ]
+        ]
+    },
+    {
+        "id": "111e30d4454a1775",
+        "type": "function",
+        "z": "759172df9e4316ca",
+        "name": "Thuật toán kiểm tra thông tin TK",
+        "func": "if ((msg.payload.User == \"admin\")&& (msg.payload.Password == \"123\"))\n{msg.payload = \"granted\"\nmsg.topic = \"authorization\"\n    return msg;\n    \n}\nelse \n{\n    msg.payload = \"denied\"\n    msg.topic = \"authorization\"\nreturn msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 100,
+        "wires": [
+            [
+                "3cd734517626aa16",
+                "9144d2cfccb974e6"
+            ]
+        ]
+    },
+    {
+        "id": "214067ebd95b5368",
+        "type": "function",
+        "z": "759172df9e4316ca",
+        "name": "redirects to login if authorization = denied ",
+        "func": "\nmsg.topic = \"tab\"\nmsg.payload = msg.tab;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 260,
+        "wires": [
+            [
+                "3cd734517626aa16"
+            ]
+        ]
+    },
+    {
+        "id": "09b122b603a0d89f",
+        "type": "function",
+        "z": "759172df9e4316ca",
+        "name": "Bắt lỗi đăng nhập sai thông tin TK",
+        "func": "if ((msg.payload.User == \"admin\")&& (msg.payload.Password == \"123\"))\n{\n    msg.payload = \" \"\n    return msg;\n    \n}\nelse \n{\n    msg.payload = \"Incorrect username or password.\"\n    msg.topic = \"authorization\"\nreturn msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 140,
+        "wires": [
+            [
+                "16437d2616b8343b"
+            ]
+        ]
+    },
+    {
+        "id": "16437d2616b8343b",
+        "type": "ui_text",
+        "z": "759172df9e4316ca",
+        "group": "281d349dbc6864de",
+        "order": 2,
+        "width": 18,
+        "height": 1,
+        "name": "Thông báo đăng nhập sai thông tin TK",
+        "label": "",
+        "format": "<font color = red >{{msg.payload}}</font>",
+        "layout": "col-center",
+        "className": "",
+        "x": 570,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "8fa3eb7d560477d2",
+        "type": "ui_button",
+        "z": "759172df9e4316ca",
+        "name": "Đăng xuất",
+        "group": "1a2eae6e1ad2d89b",
+        "order": 4,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "Đăng xuất",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "denied",
+        "payloadType": "str",
+        "topic": "authorization",
+        "topicType": "str",
+        "x": 830,
+        "y": 120,
+        "wires": [
+            [
+                "3cd734517626aa16",
+                "c3471fa2e3d61b4e"
+            ]
+        ]
+    },
+    {
+        "id": "010e75482cae333b",
+        "type": "ui_ui_control",
+        "z": "759172df9e4316ca",
+        "name": "",
+        "events": "all",
+        "x": 940,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1d4c743ff13d8799",
+        "type": "function",
+        "z": "759172df9e4316ca",
+        "name": "Cho phép quay trở lại trang Quản lý khi refresh trang khi đã đăng nhập đúng",
+        "func": "if (msg.payload == \"granted\")\n{\n    msg.payload = {\"tab\":\"Dịch vụ BBQ\"}\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 560,
+        "wires": [
+            [
+                "010e75482cae333b",
+                "68412f1a6e672105",
+                "b6af8677214a1bd0"
+            ]
+        ]
+    },
+    {
+        "id": "9144d2cfccb974e6",
+        "type": "delay",
+        "z": "759172df9e4316ca",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "outputs": 1,
+        "x": 450,
+        "y": 480,
+        "wires": [
+            [
+                "1d4c743ff13d8799"
+            ]
+        ]
+    },
+    {
+        "id": "68412f1a6e672105",
+        "type": "function",
+        "z": "759172df9e4316ca",
+        "name": "Tên người dùng trống",
+        "func": "\nmsg.payload.User = ''\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 140,
+        "y": 520,
+        "wires": [
+            [
+                "bf8b8d34e46f474e"
+            ]
+        ]
+    },
+    {
+        "id": "b6af8677214a1bd0",
+        "type": "function",
+        "z": "759172df9e4316ca",
+        "name": "Mật khẩu trống",
+        "func": "msg.payload.Password = ''\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 140,
+        "y": 620,
+        "wires": [
+            [
+                "bf8b8d34e46f474e"
+            ]
+        ]
+    },
+    {
+        "id": "c3471fa2e3d61b4e",
+        "type": "function",
+        "z": "759172df9e4316ca",
+        "name": "show the login tab",
+        "func": "msg.payload = { \"tabs\": { \"show\": \"WELCOME TO D'CAPITALE\"}}  \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 120,
+        "wires": [
+            [
+                "415af2c1e5158329"
+            ]
+        ]
+    },
+    {
+        "id": "4f37b15b393a7e34",
+        "type": "function",
+        "z": "759172df9e4316ca",
+        "name": "Giữ nguyên tại form đăng nhập nếu nhập sai thông tin TK",
+        "func": "if (msg.payload.authorization == \"denied\")\n{\n    msg.payload = { \"tabs\": \"Khu vực đăng nhập dành cho nhân viên\"}\n    return msg;\n}\n\n//if (msg.payload.authorization == \"granted\")\n//{\n//   msg.payload = {\n//        group: {\n//            hide: [\"WELCOME TO D'CAPITALE_Khu vực đăng nhập dành cho nhân viên\"]\n//        }\n//    };\n//return msg;\n//}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 340,
+        "wires": [
+            [
+                "9b3cc66a905c9cee"
+            ]
+        ]
+    },
+    {
+        "id": "8d6c3104255eea56",
+        "type": "inject",
+        "z": "759172df9e4316ca",
+        "name": "Initial injection. Locks on startup.",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 100,
+        "wires": [
+            [
+                "111e30d4454a1775"
+            ]
+        ]
+    },
+    {
+        "id": "d69998a409859ed7",
+        "type": "comment",
+        "z": "759172df9e4316ca",
+        "name": "these function nodes are where the other tabs are inserted. If permission is denied they are inaccessible and vice versa.",
+        "info": "\nthese function nodes are where the other tabs are inserted. If permission is denied they are inaccessible and vice versa.",
+        "x": 700,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "1599f83c1bd40a12",
+        "type": "function",
+        "z": "759172df9e4316ca",
+        "name": "Chuyển tiếp đến trang quản lý",
+        "func": "if (msg.payload.authorization == \"denied\")\n{\nmsg.payload = {\"tabs\": {\"hide\": \"Dịch vụ BBQ\"}}\nreturn msg;\n}\nif (msg.payload.authorization == \"granted\")\n{\nmsg.payload = {\"tabs\": \"Dịch vụ BBQ\"}\nreturn msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 440,
+        "wires": [
+            [
+                "9b3cc66a905c9cee"
+            ]
+        ]
     }
 ]
